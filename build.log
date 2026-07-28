@@ -123,6 +123,6 @@ Terser: Minifying /home/runner/work/yong-huang.github.io/yong-huang.github.io/te
        Imagemagick: Generated 54 file(s)
          AutoPages: Disabled/Not configured in site.config.
         Pagination: Complete, processed 1 pagination page(s)
-[NbConvertApp] Converting notebook /tmp/jekyll-jupyter-notebook20260728-3570-1juo7c.ipynb to html
+[NbConvertApp] Converting notebook /tmp/jekyll-jupyter-notebook20260728-3471-wq0k6j.ipynb to html
 /opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/nbconvert/filters/highlight.py:71: UserWarning: IPython3 lexer unavailable, falling back on Python 3
   return _pygments_highlight(
