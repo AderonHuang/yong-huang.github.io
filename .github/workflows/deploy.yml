@@ -91,16 +91,10 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
-      - name: Install ImageMagick
-        run: sudo apt-get install -y imagemagick || echo "imagemagick install failed, continuing"
-      - name: Install nbconvert
-        run: pip3 install --upgrade nbconvert || echo "nbconvert install failed, continuing"
       - name: Build site 🔧
         env:
           JEKYLL_ENV: production
-        run: |
-          bundle exec jekyll build --trace 2>&1 | tail -100
-          echo "EXIT_CODE=$?"
+        run: bundle exec jekyll build --trace
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
