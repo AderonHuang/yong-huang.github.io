@@ -26,19 +26,14 @@ nav_order: 3
 <div class="group-title">Research</div>
 <div class="card">
   <div class="entry">
-    <div class="entry__head">
-      <span class="entry__title">LNSMM: Eye gaze estimation with local network share multiview multitask</span>
-      <a class="chip" href="https://arxiv.org/pdf/2101.07116">PDF</a>
-    </div>
-    <div class="entry__meta">Y Huang, <a href="https://benchen4395.github.io/">B Chen</a>, D Qu</div>
+    <div class="entry__title">LNSMM: Eye gaze estimation with local network share multiview multitask</div>
+    <div class="entry__meta">Y Huang, <a href="https://benchen4395.github.io/" class="author-link">B Chen</a>, D Qu</div>
+    <div class="entry__note"><a class="chip" href="https://arxiv.org/pdf/2101.07116">PDF</a></div>
   </div>
   <div class="entry">
-    <div class="entry__head">
-      <span class="entry__title">Explored An Effective Methodology for Fine-Grained Snake Recognition</span>
-      <a class="chip" href="https://arxiv.org/pdf/2207.11637">PDF</a>
-    </div>
+    <div class="entry__title">Explored An Effective Methodology for Fine-Grained Snake Recognition</div>
     <div class="entry__meta">Y Huang, A Huang, W Zhu, Y Fang, J Feng</div>
-    <div class="entry__note">CVPR2022 – FGVC Workshop</div>
+    <div class="entry__note">CVPR2022 – FGVC Workshop · <a class="chip" href="https://arxiv.org/pdf/2207.11637">PDF</a></div>
   </div>
 </div>
 
