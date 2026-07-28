@@ -15,7 +15,7 @@ description:
       <span class="entry__date">2025 – Present</span>
     </div>
     <div class="entry__meta"><a href="https://www.meituan.com">Meituan</a> · Shanghai, China</div>
-    <div class="entry__note">Our open-source AI agent project has achieved more than 2.5k stars on GitHub.</div>
+    <div class="entry__note">Our open-source AI agent project has achieved more than 2.5k stars on GitHub — <a href="https://github.com/YeQing17-2026/OmniAgent">YeQing17-2026/OmniAgent</a></div>
   </div>
   <div class="entry">
     <div class="entry__head">
