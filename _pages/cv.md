@@ -48,7 +48,7 @@ description:
       <span class="entry__date">2018 – 2020</span>
     </div>
     <div class="entry__meta"><a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a></div>
-    <div class="entry__note">Advisor: Prof. Xiang Bai, Prof. Tao Jiang</div>
+    <div class="entry__note">Advisor: Prof. Xiang Bai, Prof. Daiming Qu, Prof. Tao Jiang</div>
   </div>
   <div class="entry">
     <div class="entry__head">
@@ -56,6 +56,7 @@ description:
       <span class="entry__date">2014 – 2018</span>
     </div>
     <div class="entry__meta">Admitted through Direct Recommendation</div>
+    <div class="entry__note">Advisor: Prof. Daiming Qu</div>
   </div>
 </div>
 
