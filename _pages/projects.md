@@ -23,23 +23,20 @@ nav_order: 3
   </div>
 </div>
 
-<div class="group-title">Rsearch</div>
+<div class="group-title">Research</div>
 <div class="card">
   <div class="entry">
     <div class="entry__head">
-      <span class="entry__title">Research Project 1</span>
-      <span class="entry__date">20XX – 20XX</span>
+      <span class="entry__title">LNSMM: Eye gaze estimation with local network share multiview multitask</span>
     </div>
-    <div class="entry__meta">Affiliation / Lab</div>
-    <div class="entry__note">Brief description of the research project</div>
+    <div class="entry__meta">Y Huang, B Chen, D Qu</div>
   </div>
   <div class="entry">
     <div class="entry__head">
-      <span class="entry__title">Research Project 2</span>
-      <span class="entry__date">20XX – 20XX</span>
+      <span class="entry__title">Explored An Effective Methodology for Fine-Grained Snake Recognition</span>
     </div>
-    <div class="entry__meta">Affiliation / Lab</div>
-    <div class="entry__note">Brief description</div>
+    <div class="entry__meta">Y Huang, A Huang, W Zhu, Y Fang, J Feng</div>
+    <div class="entry__note">CVPR2022 – FGVC Workshop</div>
   </div>
 </div>
 
