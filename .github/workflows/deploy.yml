@@ -94,7 +94,13 @@ jobs:
       - name: Build site 🔧
         env:
           JEKYLL_ENV: production
-        run: bundle exec jekyll build --trace
+        run: |
+          set -o pipefail
+          bundle exec jekyll build --trace > build.log 2>&1 || true
+          echo "--- Last 80 lines of build log ---"
+          tail -80 build.log
+          echo "--- Checking for _site ---"
+          ls -la _site 2>&1 | head -5
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
