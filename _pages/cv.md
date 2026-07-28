@@ -90,18 +90,30 @@ description:
   </div>
 </div>
 
-<div class="group-title">Patents</div>
+<div class="group-title">Invited Talks</div>
 <div class="card">
   <div class="entry">
     <div class="entry__head">
-      <span class="entry__title">Training Methods and Apparatuses for Object Detection System</span>
-      <a class="chip" href="https://patents.google.com/patent/US20230385648A1/en">US 20230385648</a>
+      <span class="entry__title">Presented an overview of Xiaomi Foundation Models at Meituan Technology</span>
+      <span class="entry__date">2025.10</span>
     </div>
   </div>
   <div class="entry">
     <div class="entry__head">
-      <span class="entry__title">图像处理的方法及装置</span>
-      <a class="chip" href="https://patents.google.com/patent/CN111524150A/en">CN 111524150</a>
+      <span class="entry__title">Delivered a talk on Self-Supervised Learning (SSL) at Xiaomi Technology Committee</span>
+      <span class="entry__date">2024.02</span>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">The AntGroup Technical Sharing Conference</span>
+      <span class="entry__date">2022.06</span>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">The Huawei 2012Labs Technical Sharing Seminar</span>
+      <span class="entry__date">2021.03</span>
     </div>
   </div>
 </div>
