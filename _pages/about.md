@@ -3,7 +3,7 @@ layout: page
 title: Yong Huang
 permalink: /
 nav: false
-description: Personal website of Yong Huang
+description:
 ---
 
 I am a Master's student at the AILab, School of Electronic Information and Communications,

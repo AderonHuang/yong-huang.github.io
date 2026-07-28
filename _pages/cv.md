@@ -4,7 +4,7 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 2
-description: Curriculum Vitae of Yong Huang
+description:
 ---
 
 <div class="group-title">Education</div>
