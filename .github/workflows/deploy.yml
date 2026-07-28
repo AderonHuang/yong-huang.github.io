@@ -110,12 +110,14 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Clean working dir, checkout gh-pages, then replace with _site
-          git checkout gh-pages 2>/dev/null || git checkout --orphan gh-pages
+          # Prepare a clean orphan branch with only _site contents
+          git checkout --orphan deploy-temp
           git rm -rf . 2>/dev/null || true
-          cp -r ../_site/. .
-          cp -r ../_site/.[!.]* . 2>/dev/null || true
+          shopt -s dotglob
+          cp -r _site/* .
           touch .nojekyll
           git add -A
           git commit -m "Deploy site" --allow-empty
-          git push -f origin gh-pages
+          git push -f origin deploy-temp:gh-pages
+          git checkout main
+          git branch -D deploy-temp
