@@ -411,7 +411,7 @@ hr {
   display: grid;
   grid-template-columns: 240px 1fr;
   gap: 3em;
-  max-width: 1820px;
+  max-width: 2360px;
   margin: 0 auto;
   padding: 1em 0;
 }
