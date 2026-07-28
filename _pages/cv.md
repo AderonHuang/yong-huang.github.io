@@ -60,26 +60,32 @@ description:
   </div>
 </div>
 
-<div class="group-title">Service</div>
+<div class="group-title">Honors and Awards</div>
 <div class="card">
-  <div class="item">
-    <span class="item__label">Journal Reviewer</span>
-    <div class="pill-row">
-      <span class="pill">T-PAMI</span>
-      <span class="pill">T-IP</span>
-      <span class="pill">T-IPAI</span>
-      <span class="pill">AI</span>
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">Won 1st Place out of 1,000+ finalist teams globally in the 2022 CVPR-Kaggle Fine-Grained Categorization Challenge</span>
+      <span class="entry__date">2022</span>
+    </div>
+    <div class="entry__meta">Paper: "Explored An Effective Methodology for Fine-Grained Snake Recognition"</div>
+    <div class="entry__note"><a href="https://www.kaggle.com/competitions/snakeclef2022/leaderboard">kaggle.com/competitions/snakeclef2022</a></div>
+  </div>
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">1st Prize in the Asian Mathematical Contest in Modeling (APMCM)</span>
+      <span class="entry__date">2017</span>
     </div>
   </div>
-  <div class="item">
-    <span class="item__label">Conference Reviewer</span>
-    <div class="pill-row">
-      <span class="pill">ICME '19</span>
-      <span class="pill">AAAI '22 '23 '25</span>
-      <span class="pill">ICIP '23</span>
-      <span class="pill">ICCV '23</span>
-      <span class="pill">CVPR '20 '21 '23 '24</span>
-      <span class="pill">ECCV '24</span>
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">2nd Prize in the Mathematical Contest in Modeling (MCM/ICM)</span>
+      <span class="entry__date">2017</span>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">1st Prize in the Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM)</span>
+      <span class="entry__date">2016</span>
     </div>
   </div>
 </div>
