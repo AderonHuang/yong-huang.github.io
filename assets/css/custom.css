@@ -409,9 +409,9 @@ hr {
    ============================================ */
 .cv-layout {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 2.5em;
-  max-width: 1300px;
+  grid-template-columns: 240px 1fr;
+  gap: 3em;
+  max-width: 1820px;
   margin: 0 auto;
   padding: 1em 0;
 }
