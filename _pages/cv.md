@@ -7,34 +7,55 @@ nav_order: 2
 description:
 ---
 
+<div class="group-title">Work Experience</div>
+<div class="card">
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">Lead for LLM AI Agent Engineering</span>
+      <span class="entry__date">2025 – Present</span>
+    </div>
+    <div class="entry__meta"><a href="https://www.meituan.com">Meituan</a> · Shanghai, China</div>
+    <div class="entry__note">Our open-source AI agent project has achieved more than 2.5k stars on GitHub.</div>
+  </div>
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">Head of Multimodal Foundation Model Pre-training</span>
+      <span class="entry__date">2023 – 2025</span>
+    </div>
+    <div class="entry__meta"><a href="https://www.xiaomi.com">Xiaomi Group</a> · Beijing</div>
+  </div>
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">Algorithm Engineer</span>
+      <span class="entry__date">2021 – 2022</span>
+    </div>
+    <div class="entry__meta"><a href="https://www.alibabagroup.com">Alibaba Group & Ant Group</a> · Shanghai / Hangzhou</div>
+  </div>
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">Researcher, 2012Labs</span>
+      <span class="entry__date">2019 – 2021</span>
+    </div>
+    <div class="entry__meta"><a href="https://www.huawei.com">Huawei</a> · Shanghai</div>
+  </div>
+</div>
+
 <div class="group-title">Education</div>
 <div class="card">
   <div class="entry">
     <div class="entry__head">
-      <span class="entry__title">M.S. in Computer Science</span>
-      <span class="entry__date">2024 – Present</span>
+      <span class="entry__title">M.S. in Electronic Engineering</span>
+      <span class="entry__date">2018 – 2020</span>
     </div>
     <div class="entry__meta"><a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a></div>
     <div class="entry__note">Advisor: Prof. Xiang Bai, Prof. Tao Jiang</div>
   </div>
   <div class="entry">
     <div class="entry__head">
-      <span class="entry__title">B.S. in XXX</span>
-      <span class="entry__date">20XX – 20XX</span>
+      <span class="entry__title">B.S. in Electronic Science and Technology</span>
+      <span class="entry__date">2014 – 2018</span>
     </div>
-    <div class="entry__meta"><a href="#">XXX University</a></div>
-  </div>
-</div>
-
-<div class="group-title">Work Experience</div>
-<div class="card">
-  <div class="entry">
-    <div class="entry__head">
-      <span class="entry__title">Research Intern</span>
-      <span class="entry__date">Summer 20XX</span>
-    </div>
-    <div class="entry__meta"><a href="#">Company / Lab Name</a></div>
-    <div class="entry__note">项目描述第 1 行</div>
+    <div class="entry__meta">Admitted through Direct Recommendation</div>
   </div>
 </div>
 
