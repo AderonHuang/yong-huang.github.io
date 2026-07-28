@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /misc/
-title: misc
+title: Misc
 nav: true
 nav_order: 5
 description: Hobbies, favorites, and other things.
