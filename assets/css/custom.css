@@ -429,8 +429,23 @@ hr {
 .cv-bio {
   color: var(--muted);
   font-size: 0.85em;
-  margin: 0 0 1em;
+  margin: 0 0 0.4em;
   font-style: italic;
+}
+
+.cv-email {
+  margin: 0 0 1em;
+  font-size: 0.88em;
+}
+
+.cv-email a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.cv-email a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
 }
 
 .cv-social {
