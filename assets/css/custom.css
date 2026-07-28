@@ -31,11 +31,40 @@ a:hover { color: var(--accent-hover); }
    Pill - 期刊/会议标签
    用法：<span class="pill">T-PAMI</span>
    ============================================ */
+.pill {
+  display: inline-block;
+  background: var(--tag-bg);
+  color: var(--tag-fg);
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 0.82em;
+  font-weight: 600;
+  margin: 0.2em 0.35em 0 0;
+  line-height: 1.6;
+}
 
 /* ============================================
    Chip - 专利/链接标签
    用法：<a class="chip" href="...">US 12345</a>
    ============================================ */
+.chip {
+  display: inline-block;
+  padding: 2px 12px;
+  margin: 0.2em 0.35em 0 0;
+  border: 1px solid #cdd8d2;
+  border-radius: 999px;
+  font-size: 0.82em;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.chip:hover {
+  background: var(--tag-bg);
+  border-color: var(--accent);
+  color: var(--accent-hover);
+}
 
 /* ============================================
    Group title (CV section header)
