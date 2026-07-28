@@ -91,6 +91,14 @@ socials_in_search: true
 posts_in_search: true
 bib_search: true
 
+# Custom CSS (reference style)
+custom_css:
+  - /assets/css/custom.css
+
+# Google Fonts (Inter)
+google_fonts:
+  - "Inter:400,500,600,700"
+
 # Dimensions
 max_width: 930px
 
