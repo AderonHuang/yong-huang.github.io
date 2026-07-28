@@ -96,11 +96,20 @@ jobs:
           JEKYLL_ENV: production
         run: |
           set -o pipefail
-          bundle exec jekyll build --trace > build.log 2>&1 || true
-          echo "--- Last 80 lines of build log ---"
-          tail -80 build.log
-          echo "--- Checking for _site ---"
-          ls -la _site 2>&1 | head -5
+          bundle exec jekyll build --trace 2>&1 | tee build.log
+          BUILD_EXIT=${PIPESTATUS[0]}
+          echo "BUILD_EXIT=$BUILD_EXIT"
+          if [ "$BUILD_EXIT" -ne 0 ]; then
+            echo "----- Full build log -----"
+            cat build.log
+            exit $BUILD_EXIT
+          fi
+      - name: Upload build log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: build.log
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
