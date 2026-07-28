@@ -4,7 +4,7 @@ title: misc
 permalink: /misc/
 description: Hobbies, favorites, and other things.
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 ## 兴趣爱好
