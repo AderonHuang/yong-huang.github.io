@@ -1,0 +1,49 @@
+---
+layout: default
+---
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="cv-layout">
+  <aside class="cv-sidebar">
+    <div class="cv-avatar">
+      <img src="{{ '/assets/img/prof_pic.png' | relative_url }}" alt="Yong Huang">
+    </div>
+    <h3 class="cv-name">Yong Huang</h3>
+    <p class="cv-bio">Master's student at HUST AILab.</p>
+    <ul class="cv-social">
+      <li><i class="fas fa-fw fa-map-marker"></i> Wuhan, Hubei, China</li>
+      <li><a href="mailto:yonghuang.hust@gmail.com"><i class="fas fa-fw fa-envelope"></i> Email</a></li>
+      <li><a href="https://github.com/AderonHuang"><i class="fab fa-fw fa-github"></i> GitHub</a></li>
+      <li><a href="https://scholar.google.com/"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+    </ul>
+  </aside>
+
+  <main class="cv-main">
+    <div class="post">
+      <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        {% if page.description %}<p class="post-description">{{ page.description }}</p>{% endif %}
+      </header>
+
+      <article>
+        {{ content }}
+      </article>
+
+      {% if page.related_publications %}
+        <h2>References</h2>
+        <div class="publications">
+          {% bibliography --cited_in_order %}
+        </div>
+      {% endif %}
+
+      {% if site.plugins contains 'al_comments' %}
+        {% include plugins/al_comments.liquid %}
+      {% endif %}
+    </div>
+  </main>
+</div>
