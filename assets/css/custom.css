@@ -276,6 +276,14 @@ a:hover { color: var(--accent-hover); }
   opacity: 0.6;
 }
 
+.entry__pdf {
+  margin-top: 0.4em;
+}
+
+.entry__pdf::before {
+  content: none;
+}
+
 /* ============================================
    Item - Service/Reviewer 行
    ============================================ */
