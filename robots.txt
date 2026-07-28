@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://AderonHuang.github.io/yong-huang.github.io/sitemap.xml
