@@ -22,6 +22,92 @@
   --nav-link: #4b5651;
   --shadow-card: 0 6px 22px rgba(30, 50, 45, 0.08);
   --shadow-fig: 0 2px 10px rgba(30, 50, 45, 0.06);
+  --navbar-bg: #ffffff;
+  --footer-bg: #ffffff;
+}
+
+/* ============================================
+   Dark Mode (夜间模式 - 全黑背景)
+   al-folio 用 [data-theme="dark"] 标记
+   ============================================ */
+[data-theme="dark"] {
+  --bg: #000000;
+  --surface: #0d0d0d;
+  --text: #e6e6e6;
+  --muted: #9a9a9a;
+  --border: #1f1f1f;
+  --border-strong: #2a2a2a;
+  --accent: #2dd4bf;
+  --accent-hover: #5eead4;
+  --tag-bg: #0f2a26;
+  --tag-fg: #2dd4bf;
+  --code-bg: #161616;
+  --code-border: #2a2a2a;
+  --nav-link: #c3ccd6;
+  --navbar-bg: #000000;
+  --footer-bg: #000000;
+}
+
+[data-theme="dark"] body,
+[data-theme="dark"] html {
+  background-color: #000000 !important;
+  color: var(--text) !important;
+}
+
+[data-theme="dark"] .navbar,
+[data-theme="dark"] .masthead,
+[data-theme="dark"] nav.navbar,
+[data-theme="dark"] .navbar.navbar-light,
+[data-theme="dark"] .navbar-expand-sm,
+[data-theme="dark"] .navbar.fixed-top {
+  background-color: #000000 !important;
+  background-image: none !important;
+  border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .post-card {
+  background-color: var(--surface) !important;
+  border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .entry,
+[data-theme="dark"] .item {
+  border-bottom-color: var(--border) !important;
+}
+
+[data-theme="dark"] .cv-sidebar {
+  background: transparent;
+}
+
+[data-theme="dark"] .cv-avatar {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] .page__footer,
+[data-theme="dark"] footer,
+[data-theme="dark"] .page__footer footer {
+  background-color: #000000 !important;
+  color: var(--muted) !important;
+  border-top-color: var(--border) !important;
+}
+
+[data-theme="dark"] .progress-container,
+[data-theme="dark"] #progress {
+  background: var(--border) !important;
+}
+
+[data-theme="dark"] a {
+  color: var(--accent);
+}
+[data-theme="dark"] a:hover {
+  color: var(--accent-hover);
+}
+
+[data-theme="dark"] ::selection {
+  background: var(--accent);
+  color: #000;
 }
 
 /* ============================================
@@ -48,6 +134,15 @@ h1, h2, h3, .page__title {
 body {
   background-color: var(--bg);
   color: var(--text);
+}
+
+.navbar, .navbar.navbar-light, .navbar-expand-sm.fixed-top {
+  background-color: var(--navbar-bg) !important;
+}
+
+footer, .page__footer footer, .page__footer {
+  background-color: var(--footer-bg) !important;
+  color: var(--muted);
 }
 
 /* Links */
