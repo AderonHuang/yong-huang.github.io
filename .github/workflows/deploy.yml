@@ -91,27 +91,18 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
-      - name: Build site 🔧
-        env:
-          JEKYLL_ENV: production
-        run: bundle exec jekyll build --trace 2>&1
+      - name: Install and Build 🔧
+        run: |
+          sudo apt-get update && sudo apt-get install -y imagemagick
+          pip3 install --upgrade nbconvert
+          export JEKYLL_ENV=production
+          bundle exec jekyll build
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
-        run: |
-          set -e
-          TMPDIR=$(mktemp -d)
-          cd "$TMPDIR"
-          git init -q
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -q --orphan gh-pages
-          cp -r "$GITHUB_WORKSPACE/_site/." .
-          cp -r "$GITHUB_WORKSPACE/_site/".[!.]* . 2>/dev/null || true
-          touch .nojekyll
-          git add -A
-          git commit -q -m "Deploy site"
-          git push -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages:gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _site
