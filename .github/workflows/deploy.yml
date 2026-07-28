@@ -110,6 +110,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f _site/
+          # Clean working dir, checkout gh-pages, then replace with _site
+          git checkout gh-pages 2>/dev/null || git checkout --orphan gh-pages
+          git rm -rf . 2>/dev/null || true
+          cp -r ../_site/. .
+          cp -r ../_site/.[!.]* . 2>/dev/null || true
+          touch .nojekyll
+          git add -A
           git commit -m "Deploy site" --allow-empty
-          git push -f origin HEAD:gh-pages
+          git push -f origin gh-pages
