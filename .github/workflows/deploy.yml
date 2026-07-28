@@ -108,16 +108,24 @@ jobs:
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         run: |
+          set -e
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Prepare a clean orphan branch with only _site contents
+
+          # Save the build output to a temp dir
+          TMPDIR=$(mktemp -d)
+          cp -r _site/. "$TMPDIR/"
+          touch "$TMPDIR/.nojekyll"
+
+          # Force-push a fresh orphan branch with only _site contents
           git checkout --orphan deploy-temp
-          git rm -rf . 2>/dev/null || true
-          shopt -s dotglob
-          cp -r _site/* .
-          touch .nojekyll
+          git clean -fdx
+          cp -r "$TMPDIR"/. .
           git add -A
           git commit -m "Deploy site" --allow-empty
           git push -f origin deploy-temp:gh-pages
+
+          # Return to main
           git checkout main
           git branch -D deploy-temp
+          rm -rf "$TMPDIR"
