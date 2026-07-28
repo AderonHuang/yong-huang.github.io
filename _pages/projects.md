@@ -2,64 +2,38 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Research projects and open-source work.
 nav: true
 nav_order: 4
-display_categories: []
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+<div class="group-title">Research Projects</div>
+<div class="card">
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">Project Name 1</span>
+      <span class="entry__date">2024 – Present</span>
     </div>
+    <div class="entry__meta"><a href="https://github.com/AderonHuang">GitHub</a> · HUST AILab</div>
+    <div class="entry__note">Brief description of the project</div>
   </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">Project Name 2</span>
+      <span class="entry__date">2023 – 2024</span>
     </div>
+    <div class="entry__meta"><a href="#">Project Link</a> · Affiliation</div>
+    <div class="entry__note">Brief description</div>
   </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
+</div>
+
+<div class="group-title">Open Source</div>
+<div class="card">
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">Repository Name</span>
+      <a class="chip" href="https://github.com/AderonHuang">GitHub</a>
+    </div>
+    <div class="entry__note">Brief description of the tool/library</div>
   </div>
-  {% endif %}
-{% endif %}
 </div>
