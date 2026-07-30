@@ -32,7 +32,7 @@ nav_order: 3
   </div>
   <div class="entry">
     <div class="entry__title">Explored An Effective Methodology for Fine-Grained Snake Recognition</div>
-    <div class="entry__meta">Y Huang, A Huang, W Zhu, Y Fang, J Feng</div>
+    <div class="entry__meta">Y Huang, A Huang, W Zhu, Y Fang, <a href="https://www.researchgate.net/scientific-contributions/Jinghua-Feng-2169941182" class="author-link">J Feng</a></div>
     <div class="entry__note">CVPR2022 – FGVC Workshop</div>
     <div class="entry__pdf"><a class="chip" href="https://arxiv.org/pdf/2207.11637">PDF</a></div>
   </div>
