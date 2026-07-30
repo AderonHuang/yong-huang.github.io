@@ -28,7 +28,6 @@ nav_order: 3
   <div class="entry">
     <div class="entry__title">LNSMM: Eye gaze estimation with local network share multiview multitask</div>
     <div class="entry__meta">Y Huang, <a href="https://benchen4395.github.io/" class="author-link">B Chen</a>, D Qu</div>
-    <div class="entry__note">CVPR2022 – FGVC Workshop</div>
     <div class="entry__pdf"><a class="chip" href="https://arxiv.org/pdf/2101.07116">PDF</a></div>
   </div>
   <div class="entry">
