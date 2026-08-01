@@ -7,31 +7,45 @@ description: "From copilot to autonomous engineer — how AI agents are evolving
 math: true
 ---
 
-# 1. Introduction
+<p class="blog-meta">Yong Huang · July 28, 2026 · 11 min read</p>
 
-Large Language Models (LLMs) have evolved rapidly over the past few years. They started as simple text generators and are now becoming **autonomous software engineers** capable of planning, reasoning, and executing complex tasks.
-
-This post explores how LLM-based AI agents are reshaping the software engineering workflow.
+<p class="blog-abstract">
+Large Language Models have evolved from simple text generators into autonomous software engineers. This post traces the journey from copilots to agents, examines the core architecture that makes agency possible, and explores how MCP and agent workflows are reshaping the future of software development.
+</p>
 
 ---
 
-# 2. What Is an AI Agent?
+## 1. Introduction
+
+Large Language Models (LLMs) have evolved rapidly over the past few years. They started as simple text generators and are now becoming **autonomous software engineers** capable of planning, reasoning, and executing complex tasks.
+
+This post explores how LLM-based AI agents are reshaping the software engineering workflow. We will cover:
+
+- What an AI agent actually is
+- The core architecture behind modern agents
+- MCP as the universal tool interface
+- The shift from code generation to workflow automation
+- The future of agent-driven development
+
+---
+
+## 2. What Is an AI Agent?
 
 An AI agent is more than just an LLM. It is a system that can:
 
-* **Perceive** its environment
-* **Reason** about goals
-* **Plan** actions
-* **Execute** those actions using tools
-* **Learn** from feedback
+- **Perceive** its environment
+- **Reason** about goals
+- **Plan** actions
+- **Execute** those actions using tools
+- **Learn** from feedback
 
 The classic agent loop looks like this:
 
 ```
- Tools  Memory
-     |     |
-     v     v
- Execute -> Observe -> Improve
+   Tools    Memory
+     |        |
+     v        v
+   Execute -> Observe -> Improve
 ```
 
 Unlike traditional LLM applications, an agent follows a loop:
@@ -48,9 +62,9 @@ $$
 
 where:
 
-* $s$ represents the current state
-* $a$ represents an action
-* $\pi$ represents the agent policy
+- $s$ represents the current state
+- $a$ represents an action
+- $\pi$ represents the agent policy
 
 The agent continuously updates its behavior based on feedback.
 
@@ -83,11 +97,11 @@ The difference is not intelligence alone. **The difference is agency.**
 
 ---
 
-# 3. Agent Architecture: More Than an LLM
+## 3. Agent Architecture: More Than an LLM
 
 A modern AI Agent usually contains several components:
 
-## 3.1 Reasoning Engine
+### 3.1 Reasoning Engine
 
 The LLM acts as the central decision maker. It converts natural language goals into executable plans:
 
@@ -99,38 +113,34 @@ A complex software requirement becomes a task graph:
 
 ```
 Feature Request
-       |
-       v
+        |
+        v
 Requirement Analysis
-       |
-       v
+        |
+        v
 Architecture Design
-       |
-       v
+        |
+        v
 Implementation
-       |
-       v
+        |
+        v
 Testing
-       |
-       v
+        |
+        v
 Deployment
 ```
 
-## 3.2 Memory System
+### 3.2 Memory System
 
 Agents need memory because real-world tasks are long-running. Memory can be divided into:
 
-### Short-term Memory
-
-Current conversation:
+**Short-term Memory** — Current conversation:
 
 $$
 M_s = \text{Context}(x_1, x_2, \ldots, x_t)
 $$
 
-### Long-term Memory
-
-Stored knowledge:
+**Long-term Memory** — Stored knowledge:
 
 $$
 M_l = \text{Database} + \text{Vector Search}
@@ -146,7 +156,7 @@ The agent retrieves the most relevant historical information before making decis
 
 ---
 
-# 4. MCP: The Universal Interface Between Agents and Tools
+## 4. MCP: The Universal Interface Between Agents and Tools
 
 One of the biggest problems in agent development is **tool integration**.
 
@@ -167,17 +177,17 @@ The **Model Context Protocol (MCP)** introduces a standardized communication lay
                  |
                 MCP
                  |
- --------------------------------
- |          |          |          |
+  --------------------------------
+  |          |          |          |
 Database   Browser   GitHub    Cloud
 Server     Server    Server    Server
 ```
 
 With MCP:
 
-* Agents can discover available tools
-* Tools expose standardized interfaces
-* Different agents can reuse the same ecosystem
+- Agents can discover available tools
+- Tools expose standardized interfaces
+- Different agents can reuse the same ecosystem
 
 The relationship becomes:
 
@@ -189,26 +199,26 @@ Instead of building custom integrations repeatedly, developers can build once an
 
 ---
 
-# 5. From Code Generation to Software Engineering Automation
+## 5. From Code Generation to Software Engineering Automation
 
 The future software development workflow may look like this:
 
 ```
 Human
- |
- v
+  |
+  v
 "Create a recommendation system"
- |
- v
+  |
+  v
 AI Agent
- |---- Analyze data
- |---- Design architecture
- |---- Write training pipeline
- |---- Run experiments
- |---- Optimize model
- |---- Deploy API
- |
- v
+  |---- Analyze data
+  |---- Design architecture
+  |---- Write training pipeline
+  |---- Run experiments
+  |---- Optimize model
+  |---- Deploy API
+  |
+  v
 Production System
 ```
 
@@ -228,7 +238,7 @@ The human role changes from **programmer** to **architect**.
 
 ---
 
-# 6. The New Bottleneck: Agent Workflow Design
+## 6. The New Bottleneck: Agent Workflow Design
 
 When coding becomes cheaper, the bottleneck moves.
 
@@ -240,7 +250,7 @@ The key question becomes:
 
 A good agent workflow requires:
 
-## 6.1 Task Decomposition
+### 6.1 Task Decomposition
 
 Breaking large goals into manageable steps:
 
@@ -248,7 +258,7 @@ $$
 \text{Complex Task} = \sum_{i=1}^{n} \text{Simple Tasks}_i
 $$
 
-## 6.2 Tool Selection
+### 6.2 Tool Selection
 
 Choosing the right action:
 
@@ -256,7 +266,7 @@ $$
 a^* = \arg\max_a P(a | \text{state})
 $$
 
-## 6.3 Verification
+### 6.3 Verification
 
 Agents need feedback loops. Without verification:
 
@@ -272,7 +282,7 @@ $$
 
 ---
 
-# 7. The Future: AI That Ships Features
+## 7. The Future: AI That Ships Features
 
 The evolution of software development:
 
@@ -291,10 +301,10 @@ Future      Autonomous Software Agent
 
 The next generation of developers may not spend most of their time writing code. Instead, they will:
 
-* Define goals
-* Design agent systems
-* Build evaluation frameworks
-* Manage autonomous engineering workflows
+- Define goals
+- Design agent systems
+- Build evaluation frameworks
+- Manage autonomous engineering workflows
 
 The ultimate vision is:
 
@@ -304,7 +314,7 @@ AI will not simply help developers write software. **AI will become a new layer 
 
 ---
 
-# 8. Conclusion
+## 8. Conclusion
 
 LLMs started as language models. Then they became coding assistants. Now they are evolving into **autonomous agents** capable of planning, reasoning, and executing complex tasks.
 
@@ -314,3 +324,13 @@ The next era belongs to those who can design intelligent workflows.
 
 > **From AI that helps you code.**
 > **To AI that builds, tests, and ships software.**
+
+---
+
+## References
+
+1. Anthropic. *Model Context Protocol Specification*. 2025.
+2. Yao, S., et al. *ReAct: Synergizing Reasoning and Acting in Language Models*. ICLR 2023.
+3. Sutton, R. S., & Barto, A. G. *Reinforcement Learning: An Introduction*. MIT Press, 2018.
+4. OpenAI. *Function Calling and Tools*. 2024.
+5. Anthropic. *Building Effective Agents*. 2024.
