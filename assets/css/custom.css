@@ -321,6 +321,36 @@ a:hover { color: var(--accent-hover); }
   line-height: 1.5;
 }
 
+/* Personal content (bookshelf, long-form) */
+.personal-content {
+  padding: 0.4em 0;
+}
+
+.personal-content p {
+  margin: 0.6em 0;
+  line-height: 1.7;
+}
+
+.personal-content ul {
+  margin: 0.8em 0;
+  padding-left: 1.4em;
+}
+
+.personal-content li {
+  margin: 0.5em 0;
+  line-height: 1.7;
+}
+
+.personal-content strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.personal-content em {
+  color: var(--accent);
+  font-style: italic;
+}
+
 /* ============================================
    Item - Service/Reviewer 行
    ============================================ */
