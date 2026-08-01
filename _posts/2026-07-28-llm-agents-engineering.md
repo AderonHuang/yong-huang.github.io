@@ -12,13 +12,22 @@ _styles: |
      Scoped to this post only.
      ============================================ */
 
-  /* ---------- Layout: hide sidebar, single column ---------- */
+  /* ---------- Layout: keep sidebar visible (matches scr.png / scr0.png) ---------- */
   .cv-layout {
-    display: block;
-    max-width: 760px;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 3em;
+    max-width: 2360px;
+    margin: 0 auto;
     padding: 1em 0;
   }
-  .cv-sidebar { display: none !important; }
+  @media (max-width: 900px) {
+    .cv-layout {
+      grid-template-columns: 1fr;
+      gap: 1.5em;
+    }
+  }
+  .cv-sidebar { display: block !important; }
   .cv-main { min-width: 0; }
 
   /* ---------- Post header (matches .post-header) ---------- */
@@ -49,18 +58,6 @@ _styles: |
     margin: 0 0 24px;
     font-style: normal;
     line-height: 1.6;
-  }
-
-  /* ---------- Post bio intro (research interests) ---------- */
-  .post-content .post-bio-intro {
-    color: var(--text);
-    font-size: 0.95em;
-    line-height: 1.6;
-    margin: 0 0 28px;
-    padding: 12px 16px;
-    background: rgba(14, 124, 116, 0.06);
-    border-left: 3px solid var(--accent);
-    border-radius: 0 6px 6px 0;
   }
 
   /* ---------- TOC (matches .toc PaperMod style) ---------- */
@@ -367,8 +364,6 @@ _styles: |
 ---
 
 <div class="post-meta">Date: July 28, 2026 | Estimated Reading Time: 11 min | Author: Yong Huang</div>
-
-<p class="post-bio-intro">My primary research interests focus in LLM, MLLM/VLM, reinforcement learning, and AI agent, with a growing interest in world models and embodied AI.</p>
 
 <div class="toc">
   <details>
