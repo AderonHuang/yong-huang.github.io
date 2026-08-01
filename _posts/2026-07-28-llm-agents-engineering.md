@@ -1,5 +1,5 @@
 ---
-title: "How LLM AI Agents Are Reshaping Software Engineering"
+title: "Harness Engineering for Self-Improvement of LLM Agents"
 date: 2026-07-28
 categories: [AI, Engineering]
 tags: [llm, agent, rag, mcp]
@@ -7,15 +7,44 @@ description: "From copilot to autonomous engineer — how AI agents are evolving
 math: true
 ---
 
-<p class="blog-meta">Yong Huang · July 28, 2026 · 11 min read</p>
+<div class="blog-tags">
+  <a href="#">llm</a>
+  <a href="#">agent</a>
+  <a href="#">rag</a>
+  <a href="#">mcp</a>
+</div>
 
-<p class="blog-abstract">
-Large Language Models have evolved from simple text generators into autonomous software engineers. This post traces the journey from copilots to agents, examines the core architecture that makes agency possible, and explores how MCP and agent workflows are reshaping the future of software development.
-</p>
+<div class="blog-toc">
+<p><strong>Table of Contents</strong></p>
+<ul>
+  <li><a href="#1-introduction">1. Introduction</a></li>
+  <li><a href="#2-what-is-an-ai-agent">2. What Is an AI Agent?</a>
+    <ul>
+      <li><a href="#example-build-a-payment-api">Example: Build a Payment API</a></li>
+    </ul>
+  </li>
+  <li><a href="#3-agent-architecture">3. Agent Architecture: More Than an LLM</a>
+    <ul>
+      <li><a href="#31-reasoning-engine">3.1 Reasoning Engine</a></li>
+      <li><a href="#32-memory-system">3.2 Memory System</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-mcp">4. MCP: The Universal Interface Between Agents and Tools</a></li>
+  <li><a href="#5-automation">5. From Code Generation to Software Engineering Automation</a></li>
+  <li><a href="#6-workflow-design">6. The New Bottleneck: Agent Workflow Design</a>
+    <ul>
+      <li><a href="#61-task-decomposition">6.1 Task Decomposition</a></li>
+      <li><a href="#62-tool-selection">6.2 Tool Selection</a></li>
+      <li><a href="#63-verification">6.3 Verification</a></li>
+    </ul>
+  </li>
+  <li><a href="#7-future">7. The Future: AI That Ships Features</a></li>
+  <li><a href="#8-conclusion">8. Conclusion</a></li>
+  <li><a href="#references">References</a></li>
+</ul>
+</div>
 
----
-
-## 1. Introduction
+# 1. Introduction
 
 Large Language Models (LLMs) have evolved rapidly over the past few years. They started as simple text generators and are now becoming **autonomous software engineers** capable of planning, reasoning, and executing complex tasks.
 
@@ -27,9 +56,7 @@ This post explores how LLM-based AI agents are reshaping the software engineerin
 - The shift from code generation to workflow automation
 - The future of agent-driven development
 
----
-
-## 2. What Is an AI Agent?
+# 2. What Is an AI Agent?
 
 An AI agent is more than just an LLM. It is a system that can:
 
@@ -68,7 +95,7 @@ where:
 
 The agent continuously updates its behavior based on feedback.
 
-### Example: Build a Payment API
+## Example: Build a Payment API
 
 **User request:**
 
@@ -95,13 +122,11 @@ An AI Agent:
 
 The difference is not intelligence alone. **The difference is agency.**
 
----
-
-## 3. Agent Architecture: More Than an LLM
+# 3. Agent Architecture: More Than an LLM
 
 A modern AI Agent usually contains several components:
 
-### 3.1 Reasoning Engine
+## 3.1 Reasoning Engine
 
 The LLM acts as the central decision maker. It converts natural language goals into executable plans:
 
@@ -130,7 +155,7 @@ Testing
 Deployment
 ```
 
-### 3.2 Memory System
+## 3.2 Memory System
 
 Agents need memory because real-world tasks are long-running. Memory can be divided into:
 
@@ -154,9 +179,7 @@ $$
 
 The agent retrieves the most relevant historical information before making decisions.
 
----
-
-## 4. MCP: The Universal Interface Between Agents and Tools
+# 4. MCP: The Universal Interface Between Agents and Tools
 
 One of the biggest problems in agent development is **tool integration**.
 
@@ -197,9 +220,7 @@ $$
 
 Instead of building custom integrations repeatedly, developers can build once and reuse everywhere.
 
----
-
-## 5. From Code Generation to Software Engineering Automation
+# 5. From Code Generation to Software Engineering Automation
 
 The future software development workflow may look like this:
 
@@ -236,9 +257,7 @@ Designing systems and supervising agents
 
 The human role changes from **programmer** to **architect**.
 
----
-
-## 6. The New Bottleneck: Agent Workflow Design
+# 6. The New Bottleneck: Agent Workflow Design
 
 When coding becomes cheaper, the bottleneck moves.
 
@@ -250,7 +269,7 @@ The key question becomes:
 
 A good agent workflow requires:
 
-### 6.1 Task Decomposition
+## 6.1 Task Decomposition
 
 Breaking large goals into manageable steps:
 
@@ -258,7 +277,7 @@ $$
 \text{Complex Task} = \sum_{i=1}^{n} \text{Simple Tasks}_i
 $$
 
-### 6.2 Tool Selection
+## 6.2 Tool Selection
 
 Choosing the right action:
 
@@ -266,7 +285,7 @@ $$
 a^* = \arg\max_a P(a | \text{state})
 $$
 
-### 6.3 Verification
+## 6.3 Verification
 
 Agents need feedback loops. Without verification:
 
@@ -280,9 +299,7 @@ $$
 \text{Agent} = \text{LLM} + \text{Planning} + \text{Memory} + \text{Tools} + \text{Evaluation}
 $$
 
----
-
-## 7. The Future: AI That Ships Features
+# 7. The Future: AI That Ships Features
 
 The evolution of software development:
 
@@ -312,9 +329,7 @@ The ultimate vision is:
 
 AI will not simply help developers write software. **AI will become a new layer of software engineering itself.**
 
----
-
-## 8. Conclusion
+# 8. Conclusion
 
 LLMs started as language models. Then they became coding assistants. Now they are evolving into **autonomous agents** capable of planning, reasoning, and executing complex tasks.
 
@@ -325,9 +340,7 @@ The next era belongs to those who can design intelligent workflows.
 > **From AI that helps you code.**
 > **To AI that builds, tests, and ships software.**
 
----
-
-## References
+# References
 
 1. Anthropic. *Model Context Protocol Specification*. 2025.
 2. Yao, S., et al. *ReAct: Synergizing Reasoning and Acting in Language Models*. ICLR 2023.
