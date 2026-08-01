@@ -675,6 +675,13 @@ hr {
   font-style: italic;
 }
 
+.cv-bio-intro {
+  color: var(--text);
+  font-size: 0.85em;
+  line-height: 1.5;
+  margin: 0 0 0.6em;
+}
+
 .cv-email {
   margin: 0 0 1em;
   font-size: 0.88em;
