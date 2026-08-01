@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LLM/VLM Software Copyright Certificates / 软件著作权证书集</title>
+<style>
+:root { --bg:#ffffff; --fg:#1f2328; --muted:#57606a; --accent:#0969da; --border:#d0d7de; --bg-soft:#f6f8fa; --bg-selected:#ddf4ff; }
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; height:100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", Arial, sans-serif;
+  font-size: 14px; line-height: 1.5; color: var(--fg); background: var(--bg);
+  display: flex; flex-direction: column;
+}
+header.bar {
+  flex: 0 0 auto; padding: 14px 20px; background: var(--bg-soft);
+  border-bottom: 1px solid var(--border);
+}
+header.bar h1 { margin:0; font-size: 18px; }
+header.bar h1 a { color: var(--fg); text-decoration: none; }
+header.bar .sub { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.main { flex: 1 1 auto; display: flex; min-height: 0; }
+aside {
+  flex: 0 0 320px; overflow-y: auto; background: var(--bg-soft);
+  border-right: 1px solid var(--border);
+  padding: 12px 0;
+}
+aside .group-title {
+  font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em;
+  color: var(--muted); padding: 12px 20px 4px;
+}
+aside ul { list-style: none; margin: 0; padding: 0; }
+aside li a {
+  display: block; padding: 8px 20px; color: var(--fg);
+  text-decoration: none; border-left: 3px solid transparent;
+  font-size: 13px; line-height: 1.35;
+}
+aside li a:hover { background: rgba(0,0,0,0.04); }
+aside li a.active {
+  background: var(--bg-selected);
+  border-left-color: var(--accent);
+  font-weight: 600;
+}
+aside .meta { font-size: 11px; color: var(--muted); }
+section.viewer {
+  flex: 1 1 auto; overflow: auto; padding: 20px;
+  background: #f0f2f5;
+  display: flex; flex-direction: column; align-items: center;
+}
+.toolbar {
+  width: 100%; max-width: 980px; margin-bottom: 14px;
+  display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+  background: #fff; padding: 10px 14px; border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.toolbar .title { font-weight: 600; flex: 1; min-width: 200px; }
+.toolbar .title small { display: block; font-weight: normal; color: var(--muted); margin-top: 2px; }
+.toolbar .btn {
+  display: inline-block; padding: 6px 14px; border: 1px solid var(--border);
+  border-radius: 6px; background: #fff; color: var(--fg); text-decoration: none;
+  font-size: 13px; cursor: pointer;
+}
+.toolbar .btn:hover { background: var(--bg-soft); text-decoration: none; }
+.toolbar .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+.toolbar .btn.primary:hover { background: #0550ae; }
+.toolbar .nav { display: flex; align-items: center; gap: 6px; }
+.toolbar .nav input {
+  width: 60px; padding: 4px 6px; border: 1px solid var(--border); border-radius: 4px;
+  text-align: center;
+}
+.pdf-canvas-wrap {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  max-width: 980px;
+}
+canvas#pdf-canvas { display: block; max-width: 100%; height: auto; }
+.status {
+  margin-top: 12px; padding: 10px 14px; border-radius: 6px;
+  font-size: 13px; display: none;
+}
+.status.error { display: block; background: #fff8c5; color: #573a00; border: 1px solid #d4a72c; }
+.status.loading { display: block; background: #ddf4ff; color: #0550ae; border: 1px solid #54aeff; }
+.spinner {
+  display: inline-block; width: 12px; height: 12px;
+  border: 2px solid currentColor; border-right-color: transparent;
+  border-radius: 50%; animation: spin 0.8s linear infinite;
+  margin-right: 6px; vertical-align: -2px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+footer.bar {
+  flex: 0 0 auto; padding: 8px 20px; border-top: 1px solid var(--border);
+  background: var(--bg-soft); color: var(--muted); font-size: 12px;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+}
+@media (max-width: 720px) {
+  .main { flex-direction: column; }
+  aside { flex: 0 0 auto; max-height: 200px; border-right: none; border-bottom: 1px solid var(--border); }
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <h1><a href="./">LLM / VLM Software Copyright Certificates</a></h1>
+  <div class="sub">LLM/VLM 软件著作权证书集 · 22 certificates · 中国版权保护中心颁发</div>
+</header>
+
+<div class="main">
+  <aside>
+    <div class="group-title">All Certificates</div>
+    <ul id="cert-list">
+      <!-- populated by JS -->
+    </ul>
+  </aside>
+
+  <section class="viewer">
+    <div class="toolbar">
+      <div class="title" id="cert-title">Loading…<small id="cert-meta"></small></div>
+      <div class="nav">
+        <button class="btn" id="prev-btn">‹ Prev</button>
+        <input id="page-input" value="1" />
+        <span>/ <span id="page-count">1</span></span>
+        <button class="btn" id="next-btn">Next ›</button>
+      </div>
+      <a class="btn" id="download-btn" target="_blank" rel="noopener">📄 Download PDF</a>
+      <a class="btn primary" id="open-raw-btn" target="_blank" rel="noopener">Open raw</a>
+    </div>
+
+    <div id="status" class="status"></div>
+    <div class="pdf-canvas-wrap"><canvas id="pdf-canvas"></canvas></div>
+  </section>
+</div>
+
+<footer class="bar">
+  <span>Viewer powered by Mozilla pdf.js + Adobe CJK CMap (loaded from CDN) — works in all browsers because we bypass GitHub's buggy blob viewer.</span>
+  <span><a href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights">View on GitHub</a></span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@4.0.379/build/pdf.min.js" crossorigin="anonymous"></script>
+<script>
+// =============== Cert manifest ===============
+const CERTS = [
+  { en: "AI Fusion Inspection Super-Brain System Based on Multimodal Large Models.pdf", zh: "基于多模态大模型AI融合巡检超脑系统", reg: "2025SR2269361" },
+  { en: "Automotive Intelligent Cockpit Multimodal System Based on AI Large Models.pdf", zh: "基于AI大模型的汽车智能座舱多模态系统", reg: "2025SR2436201" },
+  { en: "DeepResearch Agent System.pdf", zh: "DeepResearch Agent系统", reg: "2025SR2413085" },
+  { en: "Embodied Intelligence Large Model System.pdf", zh: "具身智能大模型系统", reg: "2025SR2262582" },
+  { en: "GUI Agent System Based on Multimodal Large Models.pdf", zh: "基于多模态大模型的GUI Agent系统", reg: "2025SR2410561" },
+  { en: "General Agent System Based on Multimodal Large Models.pdf", zh: "基于多模态大模型的通用Agent系统", reg: "2025SR2269402" },
+  { en: "Generative AI Commercial Search System Based on Multimodal Large Models.pdf", zh: "基于多模态大模型的生成式AI商业搜索系统", reg: "2026SR0029332" },
+  { en: "Image Generation Large Model System.pdf", zh: "图像生成大模型系统", reg: "2025SR2413062" },
+  { en: "Multi-Agent System for Stock Market Prediction Based on Multimodal Information.pdf", zh: "基于多模态信息进行股票市场预测的多智能体系统", reg: "2025SR2412079" },
+  { en: "Multimodal Large Model System Based on DAPO Reinforcement Learning.pdf", zh: "基于DAPO强化学习的多模态大模型系统", reg: "2026SR0017628" },
+  { en: "Multimodal Large Model System Based on DPO Reinforcement Learning.pdf", zh: "基于DPO强化学习的多模态大模型系统", reg: "2026SR0017637" },
+  { en: "Multimodal Large Model System Based on GFPO Reinforcement Learning.pdf", zh: "基于GFPO强化学习的多模态大模型系统", reg: "2025SR2263758" },
+  { en: "Multimodal Large Model System Based on GRPO Reinforcement Learning.pdf", zh: "基于GRPO强化学习的多模态大模型系统", reg: "2025SR2263753" },
+  { en: "Multimodal Large Model System Based on GSPO Reinforcement Learning.pdf", zh: "基于GSPO强化学习的多模态大模型系统", reg: "2025SR2258966" },
+  { en: "Multimodal Large Model System Based on PPO Reinforcement Learning.pdf", zh: "基于PPO强化学习的多模态大模型系统", reg: "2025SR2263726" },
+  { en: "Multimodal Large Model System Based on VAPO Reinforcement Learning.pdf", zh: "基于VAPO强化学习的多模态大模型系统", reg: "2025SR2263725" },
+  { en: "Multimodal Large Model System for the Financial Domain.pdf", zh: "基于金融领域的多模态大模型系统", reg: "2025SR2259420" },
+  { en: "Multimodal Large Model System with Spatial Cognition Capability.pdf", zh: "基于空间认知能力的多模态大模型系统", reg: "2025SR2269348" },
+  { en: "Natively Multimodal 3D Generation and Understanding Large Model System.pdf", zh: "基于原生多模态3D生成与理解大模型系统", reg: "2025SR2269336" },
+  { en: "Natively Multimodal Large Model.pdf", zh: "基于原生的多模态大模型系统", reg: "2026SR0017624" },
+  { en: "RAG Retrieval-Augmented Generation System Based on Large Models.pdf", zh: "基于大模型的RAG检索增强系统", reg: "2026SR0017621" },
+  { en: "Trading Agent System Based on Multimodal Large Models.pdf", zh: "基于多模态大模型的交易Agent系统", reg: "2025SR2269083" },
+];
+
+const RAW_BASE = "https://raw.githubusercontent.com/AderonHuang/LLM-VLM-Software-Copyrights/main/";
+
+// =============== Sidebar ===============
+const certList = document.getElementById("cert-list");
+CERTS.forEach((c, i) => {
+  const li = document.createElement("li");
+  li.innerHTML = `
+    <a href="?file=${encodeURIComponent(c.en)}" data-idx="${i}">
+      ${escapeHtml(c.zh)}
+      <span class="meta">${escapeHtml(c.reg)}</span>
+    </a>
+  `;
+  certList.appendChild(li);
+});
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, ch => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[ch]));
+}
+
+// =============== pdf.js setup ===============
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+  "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.0.379/build/pdf.worker.min.js";
+
+// Configure Chinese CMap - critical for these PDFs which use Identity-H + SimSun
+const cMapUrl = "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.0.379/cmaps/";
+
+let currentPdf = null;
+let currentPage = 1;
+let activeIdx = 0;
+
+// =============== Render ===============
+const canvas = document.getElementById("pdf-canvas");
+const ctx = canvas.getContext("2d");
+const statusEl = document.getElementById("status");
+const titleEl = document.getElementById("cert-title");
+const metaEl = document.getElementById("cert-meta");
+const pageInput = document.getElementById("page-input");
+const pageCount = document.getElementById("page-count");
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
+const downloadBtn = document.getElementById("download-btn");
+const openRawBtn = document.getElementById("open-raw-btn");
+
+function showStatus(msg, kind) {
+  statusEl.className = "status " + (kind || "loading");
+  statusEl.innerHTML = '<span class="spinner"></span>' + msg;
+}
+function hideStatus() {
+  statusEl.className = "status";
+  statusEl.innerHTML = "";
+}
+
+function setActive(idx) {
+  document.querySelectorAll("#cert-list a").forEach((a, i) => {
+    a.classList.toggle("active", i === idx);
+  });
+}
+
+async function loadPdf(idx) {
+  if (idx < 0 || idx >= CERTS.length) idx = 0;
+  activeIdx = idx;
+  const c = CERTS[idx];
+  setActive(idx);
+  const rawUrl = RAW_BASE + encodeURIComponent(c.en);
+
+  // Update toolbar
+  titleEl.innerHTML = escapeHtml(c.zh);
+  metaEl.textContent = c.en + " · 登记号 " + c.reg;
+  downloadBtn.href = rawUrl;
+  downloadBtn.download = c.en;
+  openRawBtn.href = "https://github.com/AderonHuang/LLM-VLM-Software-Copyrights/blob/main/" + encodeURIComponent(c.en);
+  // Update URL
+  const u = new URL(location.href);
+  u.searchParams.set("file", c.en);
+  history.replaceState(null, "", u.toString());
+
+  showStatus("Loading PDF (" + (idx + 1) + "/" + CERTS.length + ")…");
+
+  try {
+    // Destroy previous
+    if (currentPdf) { try { await currentPdf.destroy(); } catch(_) {} }
+    currentPdf = await pdfjsLib.getDocument({
+      url: rawUrl,
+      cMapUrl: cMapUrl,
+      cMapPacked: true,
+      standardFontDataUrl: "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.0.379/standard_fonts/",
+      disableAutoFetch: false,
+      disableStream: false,
+      isEvalSupported: false,
+    }).promise;
+    pageCount.textContent = currentPdf.numPages;
+    currentPage = 1;
+    pageInput.max = currentPdf.numPages;
+    await renderPage();
+    hideStatus();
+  } catch (e) {
+    console.error(e);
+    showStatus("Failed to load PDF: " + (e?.message || e), "error");
+    canvas.width = 0; canvas.height = 0;
+  }
+}
+
+async function renderPage() {
+  if (!currentPdf) return;
+  const page = await currentPdf.getPage(currentPage);
+  // Fit to viewer width
+  const containerWidth = Math.min(960, document.querySelector(".pdf-canvas-wrap").clientWidth - 4);
+  const baseVp = page.getViewport({ scale: 1 });
+  const scale = containerWidth / baseVp.width;
+  const viewport = page.getViewport({ scale: scale });
+
+  canvas.width = viewport.width;
+  canvas.height = viewport.height;
+  await page.render({ canvasContext: ctx, viewport }).promise;
+  pageInput.value = currentPage;
+  prevBtn.disabled = currentPage <= 1;
+  nextBtn.disabled = currentPage >= currentPdf.numPages;
+}
+
+prevBtn.addEventListener("click", () => {
+  if (currentPage > 1) { currentPage--; renderPage(); }
+});
+nextBtn.addEventListener("click", () => {
+  if (currentPdf && currentPage < currentPdf.numPages) { currentPage++; renderPage(); }
+});
+pageInput.addEventListener("change", () => {
+  const n = parseInt(pageInput.value, 10);
+  if (currentPdf && n >= 1 && n <= currentPdf.numPages) {
+    currentPage = n; renderPage();
+  }
+});
+document.addEventListener("keydown", (e) => {
+  if (e.target === pageInput) return;
+  if (e.key === "ArrowLeft" && currentPage > 1) { currentPage--; renderPage(); }
+  if (e.key === "ArrowRight" && currentPdf && currentPage < currentPdf.numPages) { currentPage++; renderPage(); }
+});
+
+// Click on sidebar link
+certList.addEventListener("click", (e) => {
+  const a = e.target.closest("a");
+  if (!a) return;
+  e.preventDefault();
+  const idx = parseInt(a.getAttribute("data-idx"), 10);
+  loadPdf(idx);
+});
+
+// =============== Boot ===============
+const params = new URLSearchParams(location.search);
+const initialFile = params.get("file");
+const initialIdx = initialFile ? CERTS.findIndex(c => c.en === initialFile) : 0;
+loadPdf(initialIdx >= 0 ? initialIdx : 0);
+</script>
+</body>
+</html>
