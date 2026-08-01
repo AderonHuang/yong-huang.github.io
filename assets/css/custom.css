@@ -438,6 +438,44 @@ a:hover { color: var(--accent-hover); }
   margin: 2em 0;
 }
 
+/* Blog meta & abstract (Lilian Weng style) */
+.blog-meta {
+  color: var(--muted);
+  font-size: 0.9em;
+  margin: -0.5em 0 1.2em;
+  font-style: italic;
+}
+
+.blog-abstract {
+  background: rgba(14, 124, 116, 0.06);
+  border-left: 3px solid var(--accent);
+  padding: 0.8em 1.2em;
+  margin: 1.2em 0 1.6em;
+  color: var(--text);
+  font-size: 0.95em;
+  line-height: 1.6;
+  border-radius: 0 6px 6px 0;
+}
+
+[data-theme="dark"] .blog-abstract {
+  background: rgba(45, 212, 191, 0.06);
+}
+
+/* Numbered section headers (## 1. Introduction) */
+.post-content h2 {
+  margin-top: 1.8em;
+}
+
+/* Sub-section headers (### 3.1) */
+.post-content h3 {
+  color: var(--accent);
+  border-bottom: none;
+}
+
+[data-theme="dark"] .post-content h3 {
+  color: var(--accent);
+}
+
 /* ============================================
    Item - Service/Reviewer 行
    ============================================ */
