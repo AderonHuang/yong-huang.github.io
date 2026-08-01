@@ -377,6 +377,96 @@ a:hover { color: var(--accent-hover); }
   font-style: italic;
 }
 
+/* Blog post content */
+.post-content h1, .page__content h1 {
+  margin: 1.5em 0 0.6em;
+  font-size: 1.8em;
+  font-weight: 700;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-content h2, .page__content h2 {
+  margin: 1.6em 0 0.6em;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+.post-content h3, .page__content h3 {
+  margin: 1.3em 0 0.5em;
+  font-size: 1.15em;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.post-content h1:first-of-type,
+.page__content h1:first-of-type,
+.post-content h2:first-of-type,
+.page__content h2:first-of-type {
+  margin-top: 0.2em;
+}
+
+/* Code blocks in blog posts */
+.post-content pre, .page__content pre {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 1em 1.2em;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.88em;
+  line-height: 1.5;
+  margin: 1em 0;
+}
+
+[data-theme="dark"] .post-content pre,
+[data-theme="dark"] .page__content pre {
+  background: #0d0d0d;
+  border: 1px solid #1f1f1f;
+}
+
+/* Inline code */
+.post-content code, .page__content code {
+  background: var(--code-bg);
+  border: 1px solid var(--code-border);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+}
+
+.post-content pre code, .page__content pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* Blockquote */
+.post-content blockquote, .page__content blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 0.4em 1em;
+  margin: 1em 0;
+  color: var(--muted);
+  background: rgba(14, 124, 116, 0.04);
+  border-radius: 0 6px 6px 0;
+}
+
+/* Lists in blog posts */
+.post-content ul li, .page__content ul li {
+  margin: 0.3em 0;
+}
+
+/* Math (MathJax) */
+.post-content mjx-container, .page__content mjx-container {
+  margin: 0.8em 0 !important;
+}
+
+/* Horizontal rule */
+.post-content hr, .page__content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2em 0;
+}
+
 /* ============================================
    Item - Service/Reviewer 行
    ============================================ */
