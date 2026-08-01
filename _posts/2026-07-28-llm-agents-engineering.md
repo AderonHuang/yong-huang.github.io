@@ -1,4 +1,5 @@
 ---
+layout: page
 title: "Harness Engineering for Self-Improvement of LLM Agents"
 date: 2026-07-28
 categories: [AI, Engineering]
@@ -11,13 +12,23 @@ _styles: |
      Scoped to this post only.
      ============================================ */
 
+  /* ---------- Layout: hide sidebar, single column ---------- */
+  .cv-layout {
+    display: block;
+    max-width: 760px;
+    padding: 1em 0;
+  }
+  .cv-sidebar { display: none !important; }
+  .cv-main { min-width: 0; }
+
   /* ---------- Post header (matches .post-header) ---------- */
-  .cv-layout .post-header {
+  .post-header {
     margin: 24px auto 20px;
     padding: 0;
     border-bottom: none;
   }
-  .cv-layout .post-title {
+  .post-title {
+    display: block !important;
     margin-bottom: 2px;
     font-size: 36px;
     line-height: 1.2;
@@ -25,16 +36,12 @@ _styles: |
     font-weight: 700;
     letter-spacing: -0.02em;
   }
-  .cv-layout .post-description {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    color: var(--muted);
-    font-size: 0.95em;
-    line-height: 1.5;
+  .post-description {
+    display: none;
   }
 
   /* ---------- Post meta (matches .post-meta) ---------- */
-  .post-meta {
+  .post-content .post-meta {
     color: var(--muted);
     font-size: 14px;
     display: flex;
@@ -45,7 +52,7 @@ _styles: |
   }
 
   /* ---------- TOC (matches .toc PaperMod style) ---------- */
-  .toc {
+  .post-content .toc {
     margin: 0 2px 40px;
     border: 1px solid var(--border);
     background: rgba(14, 124, 116, 0.04);
@@ -53,10 +60,10 @@ _styles: |
     padding: 0.4em;
     font-size: 15px;
   }
-  [data-theme="dark"] .toc {
+  [data-theme="dark"] .post-content .toc {
     background: rgba(45, 212, 191, 0.05);
   }
-  .toc > details > summary {
+  .post-content .toc > details > summary {
     cursor: pointer;
     margin-inline-start: 20px;
     list-style: none;
@@ -65,8 +72,8 @@ _styles: |
     color: var(--text);
     user-select: none;
   }
-  .toc > details > summary::-webkit-details-marker { display: none; }
-  .toc > details > summary::before {
+  .post-content .toc > details > summary::-webkit-details-marker { display: none; }
+  .post-content .toc > details > summary::before {
     content: "▶";
     font-size: 0.7em;
     color: var(--accent);
@@ -74,51 +81,51 @@ _styles: |
     transition: transform 0.15s ease;
     display: inline-block;
   }
-  .toc > details[open] > summary::before {
+  .post-content .toc > details[open] > summary::before {
     transform: rotate(90deg);
   }
-  .toc > details > summary:hover { background: rgba(14, 124, 116, 0.05); }
-  .toc .details {
+  .post-content .toc > details > summary:hover { background: rgba(14, 124, 116, 0.05); }
+  .post-content .toc .details {
     display: inline;
     font-weight: 500;
   }
-  .toc .inner {
+  .post-content .toc .inner {
     margin: 0 20px;
     padding: 10px 20px;
     border-top: 1px solid var(--border);
   }
-  .toc .inner ul {
+  .post-content .toc .inner ul {
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  .toc .inner ul ul {
+  .post-content .toc .inner ul ul {
     margin-inline-start: 24px;
     padding-left: 0;
     margin-top: 4px;
     font-size: 0.95em;
   }
-  .toc .inner li {
+  .post-content .toc .inner li {
     margin: 0.3em 0;
     padding-left: 0;
     position: relative;
   }
-  .toc .inner li::before {
+  .post-content .toc .inner li::before {
     content: "•";
     color: var(--accent);
     margin-right: 0.5em;
   }
-  .toc .inner li a {
+  .post-content .toc .inner li a {
     color: var(--text);
     text-decoration: none;
   }
-  .toc .inner li a:hover {
+  .post-content .toc .inner li a:hover {
     color: var(--accent);
     text-decoration: underline;
   }
 
   /* ---------- Post content (matches .post-content) ---------- */
-  .cv-main .post-content {
+  .post-content {
     max-width: 720px;
     font-size: 1em;
     line-height: 1.7;
@@ -216,13 +223,6 @@ _styles: |
     border-radius: 4px;
     color: var(--text);
     font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
-  }
-  .post-content p > code,
-  .post-content li > code,
-  .post-content a > code,
-  .post-content td > code {
-    margin: 0 4px;
-    padding: 4px 6px;
   }
 
   /* ---------- Code blocks (matches PaperMod dark code block) ---------- */
