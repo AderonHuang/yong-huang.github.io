@@ -1,44 +1,39 @@
 ---
 layout: page
 permalink: /misc/
-title: Personal
+title: Misc
 nav: true
 nav_order: 5
-description: Interests, Others
+description:
 ---
 
-<div class="group-title">Hobbies</div>
+<div class="group-title">Personal</div>
 <div class="card">
-  <div class="item">
-    <span class="item__label">Photography</span>
-    <div class="item__sub">Capturing moments in nature and daily life</div>
-  </div>
-  <div class="item">
-    <span class="item__label">Running</span>
-    <div class="item__sub">Marathon enthusiast, training 50km/week</div>
-  </div>
-  <div class="item">
-    <span class="item__label">Reading</span>
-    <div class="item__sub">Science fiction and machine learning papers</div>
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">Personal Item 1</span>
+      <span class="entry__date">20XX</span>
+    </div>
+    <div class="entry__meta">Brief description</div>
   </div>
 </div>
 
-<div class="group-title">Favorite Resources</div>
+<div class="group-title">Interests</div>
 <div class="card">
   <div class="item">
-    <span class="item__label">Papers with Code</span>
-    <div class="item__sub"><a href="https://paperswithcode.com">paperswithcode.com</a> — Latest ML research with code</div>
+    <span class="item__label">Interest 1</span>
+    <div class="item__sub">Brief description</div>
   </div>
   <div class="item">
-    <span class="item__label">Distill.pub</span>
-    <div class="item__sub"><a href="https://distill.pub">distill.pub</a> — Beautiful interactive ML articles</div>
+    <span class="item__label">Interest 2</span>
+    <div class="item__sub">Brief description</div>
   </div>
 </div>
 
-<div class="group-title">Open Source</div>
+<div class="group-title">Others</div>
 <div class="card">
   <div class="item">
-    <span class="item__label"><a href="https://github.com/AderonHuang">GitHub Profile</a></span>
-    <div class="item__sub">Personal projects and contributions</div>
+    <span class="item__label">Other Item</span>
+    <div class="item__sub">Brief description</div>
   </div>
 </div>
