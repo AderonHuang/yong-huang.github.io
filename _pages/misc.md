@@ -9,12 +9,16 @@ description:
 
 <div class="group-title">Personal</div>
 <div class="card">
-  <div class="entry">
-    <div class="entry__head">
-      <span class="entry__title">Personal Item 1</span>
-      <span class="entry__date">20XX</span>
-    </div>
-    <div class="entry__meta">Brief description</div>
+  <div class="personal-content">
+    <p><strong>I have a huge passion for reading! 📚</strong></p>
+    <p>My bookshelf covers a wide range of topics:</p>
+    <ul>
+      <li><strong>History &amp; Modern Era:</strong> <em>The History of Modern China</em>, <em>Selected Works of Mao Zedong</em>, <em>Selected Works of Deng Xiaoping</em>, <em>High-ranking Generals of the Kuomintang and the Communist Party from Whampoa Military Academy</em>, and <em>Embodied</em>.</li>
+      <li><strong>Biographies &amp; Icons:</strong> Inspiring reads like Kazuo Inamori's <em>A Spirited Life (Ikikata)</em>, as well as biographies of Sam Altman and Elon Musk.</li>
+      <li><strong>Business &amp; Tech:</strong> Titles like <em>The Samsung Empire</em>, <em>NVIDIA: The Heart of AI</em>, <em>The Leadership Pipeline</em>, and <em>Fire in the Valley</em>.</li>
+      <li><strong>Philosophy &amp; Personal Growth:</strong> Books like <em>The Road Less Traveled</em>, <em>The Power of Now</em>, <em>The 7 Habits of Highly Effective People</em>, <em>The Chrysanthemum and the Sword</em>, and <em>Positioning</em>.</li>
+    </ul>
+    <p>I'd love to connect with fellow book lovers! What are your favorite reads or recommendations?</p>
   </div>
 </div>
 
