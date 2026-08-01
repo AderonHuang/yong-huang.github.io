@@ -52,8 +52,9 @@ description:
   <div class="entry">
     <div class="entry__head">
       <span class="entry__title">Make friends</span>
-      <a class="chip" href="{{ '/galleries/wechat/' | relative_url }}">WeChat</a>
+      <a class="chip" href="{{ '/galleries/wechat/' | relative_url }}">WeChat QR</a>
     </div>
     <div class="entry__meta">I'm very keen to make friends who share similar interests. My current primary research interests are world models and embodied AI.</div>
+    <div class="entry__note">If you're interested in my background, feel free to reach out via the top right of WeChat QR code or Gmail email.</div>
   </div>
 </div>
