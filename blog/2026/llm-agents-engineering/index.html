@@ -200,10 +200,39 @@
   margin: 0 0 20px;
   padding-inline-start: 22px;
 }
+.post-content ul li, .post-content ol li {
+  margin: 8px 0;
+  line-height: 1.7;
+}
 .post-content li {
   margin: 5px 0;
 }
 .post-content li > p { margin-bottom: 0; }
+
+/* ---------- References list (hanging indent, [N] format) ---------- */
+.post-content ol.references {
+  list-style: none;
+  padding-inline-start: 0;
+  counter-reset: ref-counter;
+}
+.post-content ol.references li {
+  counter-increment: ref-counter;
+  position: relative;
+  padding-inline-start: 36px;
+  margin: 14px 0;
+  line-height: 1.65;
+  font-size: 0.95em;
+  color: var(--text);
+}
+.post-content ol.references li::before {
+  content: "[" counter(ref-counter) "]";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  text-align: left;
+  color: var(--muted);
+  font-weight: 500;
+}
 
 /* ---------- Blockquote (matches PaperMod style) ---------- */
 .post-content blockquote {
@@ -390,7 +419,7 @@ Production System
               |
               v
 Future      Autonomous Software Agent
-</code></pre> The next generation of developers may not spend most of their time writing code. Instead, they will: - Define goals - Design agent systems - Build evaluation frameworks - Manage autonomous engineering workflows The ultimate vision is: &gt; Software engineering becomes a **collaboration** between humans and intelligent agents. AI will not simply help developers write software. **AI will become a new layer of software engineering itself.** <h1 id="conclusion">Conclusion<a hidden="" class="anchor" aria-hidden="true" href="#conclusion">#</a> </h1> LLMs started as language models. Then they became coding assistants. Now they are evolving into **autonomous agents** capable of planning, reasoning, and executing complex tasks. The future competition will not only be about who has the largest model. It will be about who can build the **most reliable agent ecosystem**. The next era belongs to those who can design intelligent workflows. &gt; **From AI that helps you code.** &gt; **To AI that builds, tests, and ships software.** <h1 id="references">References<a hidden="" class="anchor" aria-hidden="true" href="#references">#</a> </h1> 1. Anthropic. *Model Context Protocol Specification*. 2025. 2. Yao, S., et al. *ReAct: Synergizing Reasoning and Acting in Language Models*. ICLR 2023. 3. Sutton, R. S., &amp; Barto, A. G. *Reinforcement Learning: An Introduction*. MIT Press, 2018. 4. OpenAI. *Function Calling and Tools*. 2024. 5. Anthropic. *Building Effective Agents*. 2024. </div> </article> </div> </main> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Yong Huang. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
+</code></pre> The next generation of developers may not spend most of their time writing code. Instead, they will: - Define goals - Design agent systems - Build evaluation frameworks - Manage autonomous engineering workflows The ultimate vision is: &gt; Software engineering becomes a **collaboration** between humans and intelligent agents. AI will not simply help developers write software. **AI will become a new layer of software engineering itself.** <h1 id="conclusion">Conclusion<a hidden="" class="anchor" aria-hidden="true" href="#conclusion">#</a> </h1> LLMs started as language models. Then they became coding assistants. Now they are evolving into **autonomous agents** capable of planning, reasoning, and executing complex tasks. The future competition will not only be about who has the largest model. It will be about who can build the **most reliable agent ecosystem**. The next era belongs to those who can design intelligent workflows. &gt; **From AI that helps you code.** &gt; **To AI that builds, tests, and ships software.** <h1 id="references">References<a hidden="" class="anchor" aria-hidden="true" href="#references">#</a> </h1> <ol class="references"> <li>Anthropic. <em>Model Context Protocol Specification</em>. 2025.</li> <li>Yao, S., et al. <em>ReAct: Synergizing Reasoning and Acting in Language Models</em>. ICLR 2023.</li> <li>Sutton, R. S., &amp; Barto, A. G. <em>Reinforcement Learning: An Introduction</em>. MIT Press, 2018.</li> <li>OpenAI. <em>Function Calling and Tools</em>. 2024.</li> <li>Anthropic. <em>Building Effective Agents</em>. 2024.</li> </ol> </div> </article> </div> </main> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Yong Huang. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
