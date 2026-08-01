@@ -21,12 +21,16 @@ description:
 <div class="group-title">Interests</div>
 <div class="card">
   <div class="item">
-    <span class="item__label">Interest 1</span>
-    <div class="item__sub">Brief description</div>
+    <span class="item__label">A heavy enthusiast of IT and tech products</span>
+    <div class="item__sub">I enjoy tinkering with smartphones, PCs, and all kinds of electronic devices.</div>
   </div>
   <div class="item">
-    <span class="item__label">Interest 2</span>
-    <div class="item__sub">Brief description</div>
+    <span class="item__label">A devoted fan of new energy vehicles</span>
+    <div class="item__sub">I have test-driven most of the mainstream NEVs currently on the market. Feel free to reach out and exchange thoughts on NEV experiences and reviews!</div>
+  </div>
+  <div class="item">
+    <span class="item__label">A casual enthusiast of outdoor activities</span>
+    <div class="item__sub">Outdoor hiking, city walks, and badminton.</div>
   </div>
 </div>
 
