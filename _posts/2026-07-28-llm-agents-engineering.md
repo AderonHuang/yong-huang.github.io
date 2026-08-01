@@ -14,34 +14,40 @@ math: true
   <a href="#">mcp</a>
 </div>
 
+<p class="blog-meta">Date: July 28, 2026 | Estimated Reading Time: 11 min | Author: Yong Huang</p>
+
 <div class="blog-toc">
-<p><strong>Table of Contents</strong></p>
-<ul>
-  <li><a href="#1-introduction">1. Introduction</a></li>
-  <li><a href="#2-what-is-an-ai-agent">2. What Is an AI Agent?</a>
-    <ul>
-      <li><a href="#example-build-a-payment-api">Example: Build a Payment API</a></li>
-    </ul>
-  </li>
-  <li><a href="#3-agent-architecture">3. Agent Architecture: More Than an LLM</a>
-    <ul>
-      <li><a href="#31-reasoning-engine">3.1 Reasoning Engine</a></li>
-      <li><a href="#32-memory-system">3.2 Memory System</a></li>
-    </ul>
-  </li>
-  <li><a href="#4-mcp">4. MCP: The Universal Interface Between Agents and Tools</a></li>
-  <li><a href="#5-automation">5. From Code Generation to Software Engineering Automation</a></li>
-  <li><a href="#6-workflow-design">6. The New Bottleneck: Agent Workflow Design</a>
-    <ul>
-      <li><a href="#61-task-decomposition">6.1 Task Decomposition</a></li>
-      <li><a href="#62-tool-selection">6.2 Tool Selection</a></li>
-      <li><a href="#63-verification">6.3 Verification</a></li>
-    </ul>
-  </li>
-  <li><a href="#7-future">7. The Future: AI That Ships Features</a></li>
-  <li><a href="#8-conclusion">8. Conclusion</a></li>
-  <li><a href="#references">References</a></li>
-</ul>
+<details>
+  <summary>Table of Contents</summary>
+  <div>
+  <ul>
+    <li><a href="#1-introduction">1. Introduction</a></li>
+    <li><a href="#2-what-is-an-ai-agent">2. What Is an AI Agent?</a>
+      <ul>
+        <li><a href="#example-build-a-payment-api">Example: Build a Payment API</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-agent-architecture">3. Agent Architecture: More Than an LLM</a>
+      <ul>
+        <li><a href="#31-reasoning-engine">3.1 Reasoning Engine</a></li>
+        <li><a href="#32-memory-system">3.2 Memory System</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-mcp">4. MCP: The Universal Interface Between Agents and Tools</a></li>
+    <li><a href="#5-automation">5. From Code Generation to Software Engineering Automation</a></li>
+    <li><a href="#6-workflow-design">6. The New Bottleneck: Agent Workflow Design</a>
+      <ul>
+        <li><a href="#61-task-decomposition">6.1 Task Decomposition</a></li>
+        <li><a href="#62-tool-selection">6.2 Tool Selection</a></li>
+        <li><a href="#63-verification">6.3 Verification</a></li>
+      </ul>
+    </li>
+    <li><a href="#7-future">7. The Future: AI That Ships Features</a></li>
+    <li><a href="#8-conclusion">8. Conclusion</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+  </div>
+</details>
 </div>
 
 # 1. Introduction
