@@ -7,120 +7,334 @@ description: "From copilot to autonomous engineer — how AI agents are evolving
 math: true
 _styles: |
   /* ============================================
-     Post-specific styles (PaperMod / Lilian Weng layout)
+     PaperMod-style overrides (Lilian Weng layout)
+     Scoped to this post only.
      ============================================ */
 
-  /* post-meta: Date | Read Time | Author line rendered as a div */
-  .post-meta {
+  /* ---------- Post header (matches .post-header) ---------- */
+  .cv-layout .post-header {
+    margin: 24px auto 20px;
+    padding: 0;
+    border-bottom: none;
+  }
+  .cv-layout .post-title {
+    margin-bottom: 2px;
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--text);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .cv-layout .post-description {
+    margin-top: 10px;
+    margin-bottom: 5px;
     color: var(--muted);
-    font-size: 0.9em;
-    margin: 0.2em 0 1.4em;
+    font-size: 0.95em;
     line-height: 1.5;
   }
 
-  /* toc: collapsible table of contents (mirrors the .blog-toc style) */
+  /* ---------- Post meta (matches .post-meta) ---------- */
+  .post-meta {
+    color: var(--muted);
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 24px;
+    font-style: normal;
+    line-height: 1.6;
+  }
+
+  /* ---------- TOC (matches .toc PaperMod style) ---------- */
   .toc {
-    margin: 1.5em 0 2em;
-    font-size: 0.95em;
-  }
-  .toc > details {
-    background: rgba(14, 124, 116, 0.04);
+    margin: 0 2px 40px;
     border: 1px solid var(--border);
-    border-radius: 6px;
-    overflow: hidden;
+    background: rgba(14, 124, 116, 0.04);
+    border-radius: 8px;
+    padding: 0.4em;
+    font-size: 15px;
   }
-  [data-theme="dark"] .toc > details {
-    background: rgba(45, 212, 191, 0.04);
+  [data-theme="dark"] .toc {
+    background: rgba(45, 212, 191, 0.05);
   }
   .toc > details > summary {
-    padding: 0.6em 1.2em;
     cursor: pointer;
-    font-weight: 600;
+    margin-inline-start: 20px;
+    list-style: none;
+    padding: 0.4em 0;
+    font-weight: 500;
     color: var(--text);
     user-select: none;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 0.4em;
   }
   .toc > details > summary::-webkit-details-marker { display: none; }
   .toc > details > summary::before {
     content: "▶";
     font-size: 0.7em;
     color: var(--accent);
+    margin-right: 8px;
     transition: transform 0.15s ease;
+    display: inline-block;
   }
   .toc > details[open] > summary::before {
     transform: rotate(90deg);
   }
-  .toc > details > summary:hover {
-    background: rgba(14, 124, 116, 0.08);
+  .toc > details > summary:hover { background: rgba(14, 124, 116, 0.05); }
+  .toc .details {
+    display: inline;
+    font-weight: 500;
   }
-  .toc > details > .inner {
-    padding: 0.8em 1.2em 1em;
+  .toc .inner {
+    margin: 0 20px;
+    padding: 10px 20px;
     border-top: 1px solid var(--border);
   }
   .toc .inner ul {
     margin: 0;
-    padding-left: 0;
+    padding: 0;
     list-style: none;
   }
   .toc .inner ul ul {
-    padding-left: 1.2em;
-    margin-top: 0.2em;
+    margin-inline-start: 24px;
+    padding-left: 0;
+    margin-top: 4px;
     font-size: 0.95em;
   }
-  .toc .inner ul li {
-    position: relative;
-    padding-left: 1.2em;
+  .toc .inner li {
     margin: 0.3em 0;
+    padding-left: 0;
+    position: relative;
   }
-  .toc .inner ul li::before {
+  .toc .inner li::before {
     content: "•";
     color: var(--accent);
-    position: absolute;
-    left: 0;
+    margin-right: 0.5em;
   }
-  .toc .inner ul li a {
+  .toc .inner li a {
     color: var(--text);
     text-decoration: none;
   }
-  .toc .inner ul li a:hover {
+  .toc .inner li a:hover {
     color: var(--accent);
     text-decoration: underline;
   }
 
-  /* Hidden anchor links on headings (PaperMod style) */
+  /* ---------- Post content (matches .post-content) ---------- */
+  .cv-main .post-content {
+    max-width: 720px;
+    font-size: 1em;
+    line-height: 1.7;
+    color: var(--text);
+  }
+  .post-content p {
+    margin: 0 0 20px;
+  }
+  .post-content strong { color: var(--text); font-weight: 600; }
+  .post-content em { color: var(--text); font-style: italic; }
+
+  /* ---------- Headings (matches PaperMod sizes) ---------- */
+  .post-content h1 {
+    margin: 28px auto 20px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--text);
+    border-bottom: none;
+    padding: 0;
+    letter-spacing: -0.01em;
+  }
+  .post-content h2 {
+    margin: 24px auto 16px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--text);
+    border-bottom: none;
+    padding: 0;
+    letter-spacing: -0.01em;
+  }
+  .post-content h3 {
+    margin: 24px 0 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .post-content h4, .post-content h5, .post-content h6 {
+    margin: 24px 0 16px;
+  }
+
+  /* ---------- Anchor links (hidden, fade in on hover) ---------- */
   .post-content h1 .anchor,
   .post-content h2 .anchor,
   .post-content h3 .anchor {
-    margin-left: 0.4em;
-    opacity: 0;
-    text-decoration: none;
+    display: inline-flex;
+    color: var(--muted);
+    margin-inline-start: 8px;
+    font-weight: 500;
     font-size: 0.85em;
-    font-weight: 400;
-    vertical-align: middle;
+    user-select: none;
+    text-decoration: none;
+    opacity: 0;
     transition: opacity 0.15s ease;
   }
   .post-content h1:hover .anchor,
   .post-content h2:hover .anchor,
-  .post-content h3:hover .anchor { opacity: 0.5; }
+  .post-content h3:hover .anchor { opacity: 1; }
   .post-content h1 .anchor:hover,
   .post-content h2 .anchor:hover,
-  .post-content h3 .anchor:hover { opacity: 1; }
+  .post-content h3 .anchor:hover { color: var(--accent); }
 
-  /* Adjust post-content h1 to match PaperMod hierarchy:
-     h1 for top-level section, h2 for subsections */
-  .post-content h1 {
-    margin: 1.8em 0 0.6em;
-    font-size: 1.7em;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0.3em;
+  /* ---------- Lists ---------- */
+  .post-content ul, .post-content ol {
+    margin: 0 0 20px;
+    padding-inline-start: 22px;
   }
-  .post-content h2 {
-    margin: 1.5em 0 0.5em;
-    font-size: 1.3em;
+  .post-content li {
+    margin: 5px 0;
+  }
+  .post-content li > p { margin-bottom: 0; }
+
+  /* ---------- Blockquote (matches PaperMod style) ---------- */
+  .post-content blockquote {
+    margin: 20px 0;
+    padding: 0 14px;
+    border-inline-start: 3px solid var(--text);
+    color: var(--text);
+    background: transparent;
+    font-style: normal;
+    border-radius: 0;
+  }
+  .post-content blockquote p { margin-bottom: 0.8em; }
+  .post-content blockquote p:last-child { margin-bottom: 0; }
+
+  /* ---------- Inline code ---------- */
+  .post-content code {
+    margin: 0 4px;
+    padding: 4px 6px;
+    font-size: 0.78em;
+    line-height: 1.5;
+    background: var(--code-bg);
+    border: none;
+    border-radius: 4px;
+    color: var(--text);
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  }
+  .post-content p > code,
+  .post-content li > code,
+  .post-content a > code,
+  .post-content td > code {
+    margin: 0 4px;
+    padding: 4px 6px;
+  }
+
+  /* ---------- Code blocks (matches PaperMod dark code block) ---------- */
+  .post-content pre {
+    margin: 10px auto;
+    background: #1c1d21;
+    border-radius: 8px;
+    overflow-x: auto;
+    padding: 0;
+    border: none;
+    font-size: 0.85em;
+    line-height: 1.5;
+  }
+  [data-theme="dark"] .post-content pre {
+    background: #0d0d0d;
+    border: 1px solid var(--border);
+  }
+  .post-content pre code {
+    display: block;
+    margin: 0;
+    padding: 10px 14px;
+    color: #d5d5d6;
+    background: transparent;
+    word-break: break-all;
+    border-radius: 0;
+    font-size: 1em;
+    line-height: 1.5;
+    border: none;
+  }
+  .post-content .language-plaintext.highlighter-rouge {
+    background: #1c1d21;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 10px auto;
+  }
+  .post-content .language-plaintext.highlighter-rouge .highlight {
+    background: transparent;
+    padding: 0;
+  }
+  .post-content .language-plaintext.highlighter-rouge pre.highlight {
+    background: transparent;
+    padding: 10px 14px;
+    margin: 0;
+    border: none;
+  }
+  .post-content .language-plaintext.highlighter-rouge pre code {
+    background: transparent;
+    padding: 0;
+    color: #d5d5d6;
+  }
+
+  /* ---------- Tables (matches PaperMod) ---------- */
+  .post-content table {
+    margin: 0 0 32px;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow-x: auto;
+    word-break: keep-all;
+  }
+  .post-content table th,
+  .post-content table td {
+    min-width: 80px;
+    padding: 6px 4px;
+    line-height: 1.25;
+    border-bottom: 1px solid var(--border);
+  }
+  .post-content table th {
+    font-size: 14px;
+    text-align: start;
+    font-weight: 600;
+  }
+
+  /* ---------- Horizontal rule ---------- */
+  .post-content hr {
+    margin: 30px 0;
+    height: 2px;
+    background: var(--border);
+    border: 0;
+  }
+
+  /* ---------- Images and figures ---------- */
+  .post-content img {
+    border-radius: 4px;
+    margin: 1rem 0;
+    max-width: 100%;
+  }
+  .post-content figure {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  .post-content figcaption {
+    text-align: center;
+    width: 75%;
+    margin: 10px auto 0;
+    line-height: 1.35;
+    color: var(--muted);
+    font-size: 15px;
+  }
+
+  /* ---------- Links inside content ---------- */
+  .post-content a {
     color: var(--accent);
+    text-decoration: none;
+    box-shadow: 0 1px 0 var(--accent);
+  }
+  .post-content a:hover { color: var(--accent-hover); text-decoration: none; }
+  .post-content a code { box-shadow: 0 -1px 0 var(--accent) inset; }
+
+  /* ---------- MathJax ---------- */
+  .post-content mjx-container {
+    margin: 0.5em 0 !important;
   }
 ---
 
@@ -133,29 +347,29 @@ _styles: |
     </summary>
     <div class="inner">
       <ul>
-        <li><a href="#1-introduction">1. Introduction</a></li>
-        <li><a href="#2-what-is-an-ai-agent">2. What Is an AI Agent?</a>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#what-is-an-ai-agent">What Is an AI Agent?</a>
           <ul>
             <li><a href="#example-build-a-payment-api">Example: Build a Payment API</a></li>
           </ul>
         </li>
-        <li><a href="#3-agent-architecture">3. Agent Architecture: More Than an LLM</a>
+        <li><a href="#agent-architecture">Agent Architecture: More Than an LLM</a>
           <ul>
-            <li><a href="#31-reasoning-engine">3.1 Reasoning Engine</a></li>
-            <li><a href="#32-memory-system">3.2 Memory System</a></li>
+            <li><a href="#reasoning-engine">Reasoning Engine</a></li>
+            <li><a href="#memory-system">Memory System</a></li>
           </ul>
         </li>
-        <li><a href="#4-mcp">4. MCP: The Universal Interface Between Agents and Tools</a></li>
-        <li><a href="#5-automation">5. From Code Generation to Software Engineering Automation</a></li>
-        <li><a href="#6-workflow-design">6. The New Bottleneck: Agent Workflow Design</a>
+        <li><a href="#mcp">MCP: The Universal Interface Between Agents and Tools</a></li>
+        <li><a href="#automation">From Code Generation to Software Engineering Automation</a></li>
+        <li><a href="#workflow-design">The New Bottleneck: Agent Workflow Design</a>
           <ul>
-            <li><a href="#61-task-decomposition">6.1 Task Decomposition</a></li>
-            <li><a href="#62-tool-selection">6.2 Tool Selection</a></li>
-            <li><a href="#63-verification">6.3 Verification</a></li>
+            <li><a href="#task-decomposition">Task Decomposition</a></li>
+            <li><a href="#tool-selection">Tool Selection</a></li>
+            <li><a href="#verification">Verification</a></li>
           </ul>
         </li>
-        <li><a href="#7-future">7. The Future: AI That Ships Features</a></li>
-        <li><a href="#8-conclusion">8. Conclusion</a></li>
+        <li><a href="#future">The Future: AI That Ships Features</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
         <li><a href="#references">References</a></li>
       </ul>
     </div>
@@ -164,7 +378,7 @@ _styles: |
 
 <div class="post-content">
 
-<h1 id="1-introduction">1. Introduction<a hidden class="anchor" aria-hidden="true" href="#1-introduction">#</a></h1>
+<h1 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h1>
 
 <p>Large Language Models (LLMs) have evolved rapidly over the past few years. They started as simple text generators and are now becoming <strong>autonomous software engineers</strong> capable of planning, reasoning, and executing complex tasks.</p>
 
@@ -178,7 +392,7 @@ _styles: |
   <li>The future of agent-driven development</li>
 </ul>
 
-<h1 id="2-what-is-an-ai-agent">2. What Is an AI Agent?<a hidden class="anchor" aria-hidden="true" href="#2-what-is-an-ai-agent">#</a></h1>
+<h1 id="what-is-an-ai-agent">What Is an AI Agent?<a hidden class="anchor" aria-hidden="true" href="#what-is-an-ai-agent">#</a></h1>
 
 <p>An AI agent is more than just an LLM. It is a system that can:</p>
 
@@ -250,11 +464,11 @@ Here is an example FastAPI implementation...
 
 <p>The difference is not intelligence alone. <strong>The difference is agency.</strong></p>
 
-<h1 id="3-agent-architecture">3. Agent Architecture: More Than an LLM<a hidden class="anchor" aria-hidden="true" href="#3-agent-architecture">#</a></h1>
+<h1 id="agent-architecture">Agent Architecture: More Than an LLM<a hidden class="anchor" aria-hidden="true" href="#agent-architecture">#</a></h1>
 
 <p>A modern AI Agent usually contains several components:</p>
 
-<h2 id="31-reasoning-engine">3.1 Reasoning Engine<a hidden class="anchor" aria-hidden="true" href="#31-reasoning-engine">#</a></h2>
+<h2 id="reasoning-engine">Reasoning Engine<a hidden class="anchor" aria-hidden="true" href="#reasoning-engine">#</a></h2>
 
 <p>The LLM acts as the central decision maker. It converts natural language goals into executable plans:</p>
 
@@ -283,7 +497,7 @@ Testing
 Deployment
 ```
 
-<h2 id="32-memory-system">3.2 Memory System<a hidden class="anchor" aria-hidden="true" href="#32-memory-system">#</a></h2>
+<h2 id="memory-system">Memory System<a hidden class="anchor" aria-hidden="true" href="#memory-system">#</a></h2>
 
 <p>Agents need memory because real-world tasks are long-running. Memory can be divided into:</p>
 
@@ -307,7 +521,7 @@ $$
 
 <p>The agent retrieves the most relevant historical information before making decisions.</p>
 
-<h1 id="4-mcp">4. MCP: The Universal Interface Between Agents and Tools<a hidden class="anchor" aria-hidden="true" href="#4-mcp">#</a></h1>
+<h1 id="mcp">MCP: The Universal Interface Between Agents and Tools<a hidden class="anchor" aria-hidden="true" href="#mcp">#</a></h1>
 
 <p>One of the biggest problems in agent development is <strong>tool integration</strong>.</p>
 
@@ -350,7 +564,7 @@ $$
 
 <p>Instead of building custom integrations repeatedly, developers can build once and reuse everywhere.</p>
 
-<h1 id="5-automation">5. From Code Generation to Software Engineering Automation<a hidden class="anchor" aria-hidden="true" href="#5-automation">#</a></h1>
+<h1 id="automation">From Code Generation to Software Engineering Automation<a hidden class="anchor" aria-hidden="true" href="#automation">#</a></h1>
 
 <p>The future software development workflow may look like this:</p>
 
@@ -387,7 +601,7 @@ Designing systems and supervising agents
 
 <p>The human role changes from <strong>programmer</strong> to <strong>architect</strong>.</p>
 
-<h1 id="6-workflow-design">6. The New Bottleneck: Agent Workflow Design<a hidden class="anchor" aria-hidden="true" href="#6-workflow-design">#</a></h1>
+<h1 id="workflow-design">The New Bottleneck: Agent Workflow Design<a hidden class="anchor" aria-hidden="true" href="#workflow-design">#</a></h1>
 
 <p>When coding becomes cheaper, the bottleneck moves.</p>
 
@@ -400,7 +614,7 @@ Designing systems and supervising agents
 
 <p>A good agent workflow requires:</p>
 
-<h2 id="61-task-decomposition">6.1 Task Decomposition<a hidden class="anchor" aria-hidden="true" href="#61-task-decomposition">#</a></h2>
+<h2 id="task-decomposition">Task Decomposition<a hidden class="anchor" aria-hidden="true" href="#task-decomposition">#</a></h2>
 
 <p>Breaking large goals into manageable steps:</p>
 
@@ -408,7 +622,7 @@ $$
 \text{Complex Task} = \sum_{i=1}^{n} \text{Simple Tasks}_i
 $$
 
-<h2 id="62-tool-selection">6.2 Tool Selection<a hidden class="anchor" aria-hidden="true" href="#62-tool-selection">#</a></h2>
+<h2 id="tool-selection">Tool Selection<a hidden class="anchor" aria-hidden="true" href="#tool-selection">#</a></h2>
 
 <p>Choosing the right action:</p>
 
@@ -416,7 +630,7 @@ $$
 a^* = \arg\max_a P(a | \text{state})
 $$
 
-<h2 id="63-verification">6.3 Verification<a hidden class="anchor" aria-hidden="true" href="#63-verification">#</a></h2>
+<h2 id="verification">Verification<a hidden class="anchor" aria-hidden="true" href="#verification">#</a></h2>
 
 <p>Agents need feedback loops. Without verification:</p>
 
@@ -430,7 +644,7 @@ $$
 \text{Agent} = \text{LLM} + \text{Planning} + \text{Memory} + \text{Tools} + \text{Evaluation}
 $$
 
-<h1 id="7-future">7. The Future: AI That Ships Features<a hidden class="anchor" aria-hidden="true" href="#7-future">#</a></h1>
+<h1 id="future">The Future: AI That Ships Features<a hidden class="anchor" aria-hidden="true" href="#future">#</a></h1>
 
 <p>The evolution of software development:</p>
 
@@ -464,7 +678,7 @@ Future      Autonomous Software Agent
 
 <p>AI will not simply help developers write software. <strong>AI will become a new layer of software engineering itself.</strong></p>
 
-<h1 id="8-conclusion">8. Conclusion<a hidden class="anchor" aria-hidden="true" href="#8-conclusion">#</a></h1>
+<h1 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h1>
 
 <p>LLMs started as language models. Then they became coding assistants. Now they are evolving into <strong>autonomous agents</strong> capable of planning, reasoning, and executing complex tasks.</p>
 
