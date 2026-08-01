@@ -21,6 +21,18 @@ nav_order: 3
       <a class="chip" href="https://patents.google.com/patent/CN111524150A/en">CN 111524150</a>
     </div>
   </div>
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">GUI Agent System Based on Multimodal Large Models</span>
+      <a class="chip" href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights/blob/main/GUI%20Agent%20System%20Based%20on%20Multimodal%20Large%20Models.pdf">2025SR2410561</a>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">General Agent System Based on Multimodal Large Models</span>
+      <a class="chip" href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights/blob/main/General%20Agent%20System%20Based%20on%20Multimodal%20Large%20Models.pdf">2025SR2269402</a>
+    </div>
+  </div>
 </div>
 
 <div class="group-title">Research</div>
