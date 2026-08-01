@@ -1,4 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"> <html><body> <p>&lt;!DOCTYPE html&gt;</p> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>LLM/VLM Software Copyright Certificates / 软件著作权证书集</title> <style>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LLM/VLM Software Copyright Certificates / 软件著作权证书集</title>
+<style>
 :root { --bg:#ffffff; --fg:#1f2328; --muted:#57606a; --accent:#0969da; --border:#d0d7de; --bg-soft:#f6f8fa; --bg-selected:#ddf4ff; }
 * { box-sizing: border-box; }
 html, body { margin:0; padding:0; height:100%; }
@@ -93,7 +99,48 @@ footer.bar {
   .main { flex-direction: column; }
   aside { flex: 0 0 auto; max-height: 200px; border-right: none; border-bottom: 1px solid var(--border); }
 }
-</style> <header class="bar"> <h1><a href="./">LLM / VLM Software Copyright Certificates</a></h1> <div class="sub">LLM/VLM 软件著作权证书集 · 22 certificates · 中国版权保护中心颁发</div> </header> <div class="main"> <aside> <div class="group-title">All Certificates</div> <ul id="cert-list"> </ul> </aside> <section class="viewer"> <div class="toolbar"> <div class="title" id="cert-title">Loading…<small id="cert-meta"></small> </div> <div class="nav"> <button class="btn" id="prev-btn">‹ Prev</button> <input id="page-input" value="1"> <span>/ <span id="page-count">1</span></span> <button class="btn" id="next-btn">Next ›</button> </div> <a class="btn" id="download-btn" target="_blank" rel="noopener">📄 Download PDF</a> <a class="btn primary" id="open-raw-btn" target="_blank" rel="noopener">Open raw</a> </div> <div id="status" class="status"></div> <div class="pdf-canvas-wrap"><canvas id="pdf-canvas"></canvas></div> </section> </div> <footer class="bar"> <span>Viewer powered by Mozilla pdf.js + Adobe CJK CMap (loaded from CDN) — works in all browsers because we bypass GitHub's buggy blob viewer.</span> <span><a href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights" rel="external nofollow noopener" target="_blank">View on GitHub</a></span> </footer> <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@4.0.379/build/pdf.min.js" crossorigin="anonymous"></script> <script>
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <h1><a href="./">LLM / VLM Software Copyright Certificates</a></h1>
+  <div class="sub">LLM/VLM 软件著作权证书集 · 22 certificates · 中国版权保护中心颁发</div>
+</header>
+
+<div class="main">
+  <aside>
+    <div class="group-title">All Certificates</div>
+    <ul id="cert-list">
+      <!-- populated by JS -->
+    </ul>
+  </aside>
+
+  <section class="viewer">
+    <div class="toolbar">
+      <div class="title" id="cert-title">Loading…<small id="cert-meta"></small></div>
+      <div class="nav">
+        <button class="btn" id="prev-btn">‹ Prev</button>
+        <input id="page-input" value="1" />
+        <span>/ <span id="page-count">1</span></span>
+        <button class="btn" id="next-btn">Next ›</button>
+      </div>
+      <a class="btn" id="download-btn" target="_blank" rel="noopener">📄 Download PDF</a>
+      <a class="btn primary" id="open-raw-btn" target="_blank" rel="noopener">Open raw</a>
+    </div>
+
+    <div id="status" class="status"></div>
+    <div class="pdf-canvas-wrap"><canvas id="pdf-canvas"></canvas></div>
+  </section>
+</div>
+
+<footer class="bar">
+  <span>Viewer powered by Mozilla pdf.js + Adobe CJK CMap (loaded from CDN) — works in all browsers because we bypass GitHub's buggy blob viewer.</span>
+  <span><a href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights">View on GitHub</a></span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@4.0.379/build/pdf.min.js" crossorigin="anonymous"></script>
+<script>
 // =============== Cert manifest ===============
 const CERTS = [
   { en: "AI Fusion Inspection Super-Brain System Based on Multimodal Large Models.pdf", zh: "基于多模态大模型AI融合巡检超脑系统", reg: "2025SR2269361" },
@@ -271,4 +318,6 @@ const params = new URLSearchParams(location.search);
 const initialFile = params.get("file");
 const initialIdx = initialFile ? CERTS.findIndex(c => c.en === initialFile) : 0;
 loadPdf(initialIdx >= 0 ? initialIdx : 0);
-</script> </body></html>
+</script>
+</body>
+</html>
