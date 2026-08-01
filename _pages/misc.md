@@ -27,14 +27,17 @@ description:
   <div class="item">
     <span class="item__label">A heavy enthusiast of IT and tech products</span>
     <div class="item__sub">I enjoy tinkering with smartphones, PCs, and all kinds of electronic devices.</div>
+    <div class="item__pdf"><a class="chip" href="{{ '/galleries/tech/' | relative_url }}">Photos</a></div>
   </div>
   <div class="item">
     <span class="item__label">A devoted fan of new energy vehicles</span>
     <div class="item__sub">I have test-driven most of the mainstream NEVs currently on the market. Feel free to reach out and exchange thoughts on NEV experiences and reviews!</div>
+    <div class="item__pdf"><a class="chip" href="{{ '/galleries/nev/' | relative_url }}">Photos</a></div>
   </div>
   <div class="item">
     <span class="item__label">A casual enthusiast of outdoor activities</span>
     <div class="item__sub">Outdoor hiking, city walks, and badminton.</div>
+    <div class="item__pdf"><a class="chip" href="{{ '/galleries/outdoor/' | relative_url }}">Photos</a></div>
   </div>
 </div>
 
