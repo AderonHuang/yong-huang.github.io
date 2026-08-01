@@ -344,6 +344,14 @@ _styles: |
   .post-content mjx-container {
     margin: 0.5em 0 !important;
   }
+  .post-content .math-block {
+    text-align: center;
+    margin: 1.2em 0;
+    overflow-x: auto;
+  }
+  .post-content .math-block > mjx-container {
+    display: inline-block;
+  }
 ---
 
 <div class="post-meta">Date: July 28, 2026 | Estimated Reading Time: 11 min | Author: Yong Huang</div>
@@ -418,15 +426,19 @@ The classic agent loop looks like this:
 
 Unlike traditional LLM applications, an agent follows a loop:
 
+<p class="math-block">
 $$
 \text{Goal} \rightarrow \text{Plan} \rightarrow \text{Action} \rightarrow \text{Observation} \rightarrow \text{Reflection} \rightarrow \text{Next Action}
 $$
+</p>
 
 This is similar to reinforcement learning:
 
+<p class="math-block">
 $$
 \pi(a|s)
 $$
+</p>
 
 where:
 
@@ -469,9 +481,11 @@ A modern AI Agent usually contains several components:
 
 The LLM acts as the central decision maker. It converts natural language goals into executable plans:
 
+<p class="math-block">
 $$
 \text{Goal} \rightarrow \{T_1, T_2, \ldots, T_n\}
 $$
+</p>
 
 A complex software requirement becomes a task graph:
 
@@ -499,21 +513,27 @@ Agents need memory because real-world tasks are long-running. Memory can be divi
 
 **Short-term Memory** — Current conversation:
 
+<p class="math-block">
 $$
 M_s = \text{Context}(x_1, x_2, \ldots, x_t)
 $$
+</p>
 
 **Long-term Memory** — Stored knowledge:
 
+<p class="math-block">
 $$
 M_l = \text{Database} + \text{Vector Search}
 $$
+</p>
 
 A typical retrieval process uses cosine similarity:
 
+<p class="math-block">
 $$
 \text{Similarity}(q, d) = \frac{q \cdot d}{\|q\| \|d\|}
 $$
+</p>
 
 The agent retrieves the most relevant historical information before making decisions.
 
@@ -550,9 +570,11 @@ With MCP:
 
 The relationship becomes:
 
+<p class="math-block">
 $$
 \text{Agent} + \text{MCP} + \text{Tools} \rightarrow \text{General-purpose AI Worker}
 $$
+</p>
 
 Instead of building custom integrations repeatedly, developers can build once and reuse everywhere.
 
@@ -606,31 +628,39 @@ A good agent workflow requires:
 
 Breaking large goals into manageable steps:
 
+<p class="math-block">
 $$
 \text{Complex Task} = \sum_{i=1}^{n} \text{Simple Tasks}_i
 $$
+</p>
 
 <h2 id="tool-selection">Tool Selection<a hidden class="anchor" aria-hidden="true" href="#tool-selection">#</a></h2>
 
 Choosing the right action:
 
+<p class="math-block">
 $$
 a^* = \arg\max_a P(a | \text{state})
 $$
+</p>
 
 <h2 id="verification">Verification<a hidden class="anchor" aria-hidden="true" href="#verification">#</a></h2>
 
 Agents need feedback loops. Without verification:
 
+<p class="math-block">
 $$
 \text{Generation} \neq \text{Correctness}
 $$
+</p>
 
 A production-level agent requires:
 
+<p class="math-block">
 $$
 \text{Agent} = \text{LLM} + \text{Planning} + \text{Memory} + \text{Tools} + \text{Evaluation}
 $$
+</p>
 
 <h1 id="future">The Future: AI That Ships Features<a hidden class="anchor" aria-hidden="true" href="#future">#</a></h1>
 
