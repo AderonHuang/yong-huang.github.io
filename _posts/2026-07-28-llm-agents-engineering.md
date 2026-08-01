@@ -194,10 +194,39 @@ _styles: |
     margin: 0 0 20px;
     padding-inline-start: 22px;
   }
+  .post-content ul li, .post-content ol li {
+    margin: 8px 0;
+    line-height: 1.7;
+  }
   .post-content li {
     margin: 5px 0;
   }
   .post-content li > p { margin-bottom: 0; }
+
+  /* ---------- References list (hanging indent, [N] format) ---------- */
+  .post-content ol.references {
+    list-style: none;
+    padding-inline-start: 0;
+    counter-reset: ref-counter;
+  }
+  .post-content ol.references li {
+    counter-increment: ref-counter;
+    position: relative;
+    padding-inline-start: 36px;
+    margin: 14px 0;
+    line-height: 1.65;
+    font-size: 0.95em;
+    color: var(--text);
+  }
+  .post-content ol.references li::before {
+    content: "[" counter(ref-counter) "]";
+    position: absolute;
+    left: 0;
+    width: 30px;
+    text-align: left;
+    color: var(--muted);
+    font-weight: 500;
+  }
 
   /* ---------- Blockquote (matches PaperMod style) ---------- */
   .post-content blockquote {
@@ -645,10 +674,12 @@ The next era belongs to those who can design intelligent workflows.
 
 <h1 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h1>
 
-1. Anthropic. *Model Context Protocol Specification*. 2025.
-2. Yao, S., et al. *ReAct: Synergizing Reasoning and Acting in Language Models*. ICLR 2023.
-3. Sutton, R. S., &amp; Barto, A. G. *Reinforcement Learning: An Introduction*. MIT Press, 2018.
-4. OpenAI. *Function Calling and Tools*. 2024.
-5. Anthropic. *Building Effective Agents*. 2024.
+<ol class="references">
+  <li>Anthropic. <em>Model Context Protocol Specification</em>. 2025.</li>
+  <li>Yao, S., et al. <em>ReAct: Synergizing Reasoning and Acting in Language Models</em>. ICLR 2023.</li>
+  <li>Sutton, R. S., &amp; Barto, A. G. <em>Reinforcement Learning: An Introduction</em>. MIT Press, 2018.</li>
+  <li>OpenAI. <em>Function Calling and Tools</em>. 2024.</li>
+  <li>Anthropic. <em>Building Effective Agents</em>. 2024.</li>
+</ol>
 
 </div>
