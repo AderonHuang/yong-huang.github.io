@@ -439,27 +439,6 @@ a:hover { color: var(--accent-hover); }
 }
 
 /* Blog meta & abstract (Lilian Weng style) */
-.blog-meta {
-  color: var(--muted);
-  font-size: 0.9em;
-  margin: -0.5em 0 1.2em;
-  font-style: italic;
-}
-
-.blog-abstract {
-  background: rgba(14, 124, 116, 0.06);
-  border-left: 3px solid var(--accent);
-  padding: 0.8em 1.2em;
-  margin: 1.2em 0 1.6em;
-  color: var(--text);
-  font-size: 0.95em;
-  line-height: 1.6;
-  border-radius: 0 6px 6px 0;
-}
-
-[data-theme="dark"] .blog-abstract {
-  background: rgba(45, 212, 191, 0.06);
-}
 
 /* Numbered section headers (## 1. Introduction) */
 .post-content h2 {
@@ -474,6 +453,110 @@ a:hover { color: var(--accent-hover); }
 
 [data-theme="dark"] .post-content h3 {
   color: var(--accent);
+}
+
+/* Blog tag pills (top of post) */
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 0 0 1.5em;
+}
+
+.blog-tags a {
+  display: inline-block;
+  background: var(--tag-bg);
+  color: var(--tag-fg);
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 0.78em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.blog-tags a:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* Blog TOC (Lilian Weng style) */
+.blog-toc {
+  background: rgba(14, 124, 116, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1em 1.5em;
+  margin: 1.5em 0 2em;
+  font-size: 0.95em;
+}
+
+[data-theme="dark"] .blog-toc {
+  background: rgba(45, 212, 191, 0.04);
+}
+
+.blog-toc p {
+  margin: 0 0 0.6em;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.blog-toc ul {
+  margin: 0;
+  padding-left: 1.2em;
+  list-style: none;
+}
+
+.blog-toc > ul {
+  padding-left: 0;
+}
+
+.blog-toc ul li {
+  margin: 0.25em 0;
+  position: relative;
+}
+
+.blog-toc ul li a {
+  color: var(--text);
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+.blog-toc ul li a:hover {
+  color: var(--accent);
+}
+
+.blog-toc ul li::before {
+  content: "•";
+  color: var(--accent);
+  position: absolute;
+  left: -1em;
+}
+
+/* Post headings should have anchor links (kramdown-style) */
+.post-content h1, .post-content h2, .post-content h3,
+.post-content h4, .post-content h5 {
+  position: relative;
+}
+
+
+.post-content h1 a,
+.post-content h2 a,
+.post-content h3 a,
+.post-content h4 a,
+.post-content h5 a {
+  position: absolute;
+  left: -1.2em;
+  opacity: 0;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.post-content h1:hover a,
+.post-content h2:hover a,
+.post-content h3:hover a,
+.post-content h4:hover a,
+.post-content h5:hover a {
+  opacity: 0.4;
 }
 
 /* ============================================
