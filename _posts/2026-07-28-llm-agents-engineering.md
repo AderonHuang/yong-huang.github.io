@@ -252,27 +252,6 @@ _styles: |
     line-height: 1.5;
     border: none;
   }
-  .post-content .language-plaintext.highlighter-rouge {
-    background: #1c1d21;
-    border-radius: 8px;
-    overflow-x: auto;
-    margin: 10px auto;
-  }
-  .post-content .language-plaintext.highlighter-rouge .highlight {
-    background: transparent;
-    padding: 0;
-  }
-  .post-content .language-plaintext.highlighter-rouge pre.highlight {
-    background: transparent;
-    padding: 10px 14px;
-    margin: 0;
-    border: none;
-  }
-  .post-content .language-plaintext.highlighter-rouge pre code {
-    background: transparent;
-    padding: 0;
-    color: #d5d5d6;
-  }
 
   /* ---------- Tables (matches PaperMod) ---------- */
   .post-content table {
@@ -380,79 +359,68 @@ _styles: |
 
 <h1 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h1>
 
-<p>Large Language Models (LLMs) have evolved rapidly over the past few years. They started as simple text generators and are now becoming <strong>autonomous software engineers</strong> capable of planning, reasoning, and executing complex tasks.</p>
+Large Language Models (LLMs) have evolved rapidly over the past few years. They started as simple text generators and are now becoming **autonomous software engineers** capable of planning, reasoning, and executing complex tasks.
 
-<p>This post explores how LLM-based AI agents are reshaping the software engineering workflow. We will cover:</p>
+This post explores how LLM-based AI agents are reshaping the software engineering workflow. We will cover:
 
-<ul>
-  <li>What an AI agent actually is</li>
-  <li>The core architecture behind modern agents</li>
-  <li>MCP as the universal tool interface</li>
-  <li>The shift from code generation to workflow automation</li>
-  <li>The future of agent-driven development</li>
-</ul>
+- What an AI agent actually is
+- The core architecture behind modern agents
+- MCP as the universal tool interface
+- The shift from code generation to workflow automation
+- The future of agent-driven development
 
 <h1 id="what-is-an-ai-agent">What Is an AI Agent?<a hidden class="anchor" aria-hidden="true" href="#what-is-an-ai-agent">#</a></h1>
 
-<p>An AI agent is more than just an LLM. It is a system that can:</p>
+An AI agent is more than just an LLM. It is a system that can:
 
-<ul>
-  <li><strong>Perceive</strong> its environment</li>
-  <li><strong>Reason</strong> about goals</li>
-  <li><strong>Plan</strong> actions</li>
-  <li><strong>Execute</strong> those actions using tools</li>
-  <li><strong>Learn</strong> from feedback</li>
-</ul>
+- **Perceive** its environment
+- **Reason** about goals
+- **Plan** actions
+- **Execute** those actions using tools
+- **Learn** from feedback
 
-<p>The classic agent loop looks like this:</p>
+The classic agent loop looks like this:
 
-```
-   Tools    Memory
+<pre><code>   Tools    Memory
      |        |
      v        v
-   Execute -> Observe -> Improve
-```
+   Execute -&gt; Observe -&gt; Improve
+</code></pre>
 
-<p>Unlike traditional LLM applications, an agent follows a loop:</p>
+Unlike traditional LLM applications, an agent follows a loop:
 
 $$
 \text{Goal} \rightarrow \text{Plan} \rightarrow \text{Action} \rightarrow \text{Observation} \rightarrow \text{Reflection} \rightarrow \text{Next Action}
 $$
 
-<p>This is similar to reinforcement learning:</p>
+This is similar to reinforcement learning:
 
 $$
 \pi(a|s)
 $$
 
-<p>where:</p>
+where:
 
-<ul>
-  <li>$s$ represents the current state</li>
-  <li>$a$ represents an action</li>
-  <li>$\pi$ represents the agent policy</li>
-</ul>
+- $s$ represents the current state
+- $a$ represents an action
+- $\pi$ represents the agent policy
 
-<p>The agent continuously updates its behavior based on feedback.</p>
+The agent continuously updates its behavior based on feedback.
 
 <h2 id="example-build-a-payment-api">Example: Build a Payment API<a hidden class="anchor" aria-hidden="true" href="#example-build-a-payment-api">#</a></h2>
 
-<p><strong>User request:</strong></p>
+**User request:**
 
-<blockquote>
-  <p>Build a payment system API.</p>
-</blockquote>
+> Build a payment system API.
 
-<p>A traditional LLM:</p>
+A traditional LLM:
 
-```
-Here is an example FastAPI implementation...
-```
+<pre><code>Here is an example FastAPI implementation...
+</code></pre>
 
-<p>An AI Agent:</p>
+An AI Agent:
 
-```
-1. Analyze requirements
+<pre><code>1. Analyze requirements
 2. Design database schema
 3. Create backend service
 4. Write API endpoints
@@ -460,26 +428,25 @@ Here is an example FastAPI implementation...
 6. Run test cases
 7. Debug failures
 8. Deploy service
-```
+</code></pre>
 
-<p>The difference is not intelligence alone. <strong>The difference is agency.</strong></p>
+The difference is not intelligence alone. **The difference is agency.**
 
 <h1 id="agent-architecture">Agent Architecture: More Than an LLM<a hidden class="anchor" aria-hidden="true" href="#agent-architecture">#</a></h1>
 
-<p>A modern AI Agent usually contains several components:</p>
+A modern AI Agent usually contains several components:
 
 <h2 id="reasoning-engine">Reasoning Engine<a hidden class="anchor" aria-hidden="true" href="#reasoning-engine">#</a></h2>
 
-<p>The LLM acts as the central decision maker. It converts natural language goals into executable plans:</p>
+The LLM acts as the central decision maker. It converts natural language goals into executable plans:
 
 $$
 \text{Goal} \rightarrow \{T_1, T_2, \ldots, T_n\}
 $$
 
-<p>A complex software requirement becomes a task graph:</p>
+A complex software requirement becomes a task graph:
 
-```
-Feature Request
+<pre><code>Feature Request
         |
         v
 Requirement Analysis
@@ -495,50 +462,48 @@ Testing
         |
         v
 Deployment
-```
+</code></pre>
 
 <h2 id="memory-system">Memory System<a hidden class="anchor" aria-hidden="true" href="#memory-system">#</a></h2>
 
-<p>Agents need memory because real-world tasks are long-running. Memory can be divided into:</p>
+Agents need memory because real-world tasks are long-running. Memory can be divided into:
 
-<p><strong>Short-term Memory</strong> — Current conversation:</p>
+**Short-term Memory** — Current conversation:
 
 $$
 M_s = \text{Context}(x_1, x_2, \ldots, x_t)
 $$
 
-<p><strong>Long-term Memory</strong> — Stored knowledge:</p>
+**Long-term Memory** — Stored knowledge:
 
 $$
 M_l = \text{Database} + \text{Vector Search}
 $$
 
-<p>A typical retrieval process uses cosine similarity:</p>
+A typical retrieval process uses cosine similarity:
 
 $$
 \text{Similarity}(q, d) = \frac{q \cdot d}{\|q\| \|d\|}
 $$
 
-<p>The agent retrieves the most relevant historical information before making decisions.</p>
+The agent retrieves the most relevant historical information before making decisions.
 
 <h1 id="mcp">MCP: The Universal Interface Between Agents and Tools<a hidden class="anchor" aria-hidden="true" href="#mcp">#</a></h1>
 
-<p>One of the biggest problems in agent development is <strong>tool integration</strong>.</p>
+One of the biggest problems in agent development is **tool integration**.
 
-<p>Every application previously had its own API:</p>
+Every application previously had its own API:
 
-```
-Agent A ---- API-1
+<pre><code>Agent A ---- API-1
 Agent B ---- API-2
 Agent C ---- API-3
-```
+</code></pre>
 
-<p>This creates fragmentation.</p>
+This creates fragmentation.
 
-<p>The <strong>Model Context Protocol (MCP)</strong> introduces a standardized communication layer:</p>
+The **Model Context Protocol (MCP)** introduces a standardized communication layer:
 
-```
-              AI Agent
+<pre><code>              AI Agent
                  |
                 MCP
                  |
@@ -546,30 +511,27 @@ Agent C ---- API-3
   |          |          |          |
 Database   Browser   GitHub    Cloud
 Server     Server    Server    Server
-```
+</code></pre>
 
-<p>With MCP:</p>
+With MCP:
 
-<ul>
-  <li>Agents can discover available tools</li>
-  <li>Tools expose standardized interfaces</li>
-  <li>Different agents can reuse the same ecosystem</li>
-</ul>
+- Agents can discover available tools
+- Tools expose standardized interfaces
+- Different agents can reuse the same ecosystem
 
-<p>The relationship becomes:</p>
+The relationship becomes:
 
 $$
 \text{Agent} + \text{MCP} + \text{Tools} \rightarrow \text{General-purpose AI Worker}
 $$
 
-<p>Instead of building custom integrations repeatedly, developers can build once and reuse everywhere.</p>
+Instead of building custom integrations repeatedly, developers can build once and reuse everywhere.
 
 <h1 id="automation">From Code Generation to Software Engineering Automation<a hidden class="anchor" aria-hidden="true" href="#automation">#</a></h1>
 
-<p>The future software development workflow may look like this:</p>
+The future software development workflow may look like this:
 
-```
-Human
+<pre><code>Human
   |
   v
 "Create a recommendation system"
@@ -585,38 +547,35 @@ AI Agent
   |
   v
 Production System
-```
+</code></pre>
 
-<p>The developer moves from:</p>
+The developer moves from:
 
-```
-Writing every line of code
-```
+<pre><code>Writing every line of code
+</code></pre>
 
-<p>to:</p>
+to:
 
-```
-Designing systems and supervising agents
-```
+<pre><code>Designing systems and supervising agents
+</code></pre>
 
-<p>The human role changes from <strong>programmer</strong> to <strong>architect</strong>.</p>
+The human role changes from **programmer** to **architect**.
 
 <h1 id="workflow-design">The New Bottleneck: Agent Workflow Design<a hidden class="anchor" aria-hidden="true" href="#workflow-design">#</a></h1>
 
-<p>When coding becomes cheaper, the bottleneck moves.</p>
+When coding becomes cheaper, the bottleneck moves.
 
-<p>The key question becomes:</p>
+The key question becomes:
 
-<blockquote>
-  <p>Not: "Can AI write this function?"</p>
-  <p>But: "Can we design an agent workflow that <strong>reliably</strong> solves this class of problems?"</p>
-</blockquote>
+> Not: "Can AI write this function?"
+>
+> But: "Can we design an agent workflow that **reliably** solves this class of problems?"
 
-<p>A good agent workflow requires:</p>
+A good agent workflow requires:
 
 <h2 id="task-decomposition">Task Decomposition<a hidden class="anchor" aria-hidden="true" href="#task-decomposition">#</a></h2>
 
-<p>Breaking large goals into manageable steps:</p>
+Breaking large goals into manageable steps:
 
 $$
 \text{Complex Task} = \sum_{i=1}^{n} \text{Simple Tasks}_i
@@ -624,7 +583,7 @@ $$
 
 <h2 id="tool-selection">Tool Selection<a hidden class="anchor" aria-hidden="true" href="#tool-selection">#</a></h2>
 
-<p>Choosing the right action:</p>
+Choosing the right action:
 
 $$
 a^* = \arg\max_a P(a | \text{state})
@@ -632,13 +591,13 @@ $$
 
 <h2 id="verification">Verification<a hidden class="anchor" aria-hidden="true" href="#verification">#</a></h2>
 
-<p>Agents need feedback loops. Without verification:</p>
+Agents need feedback loops. Without verification:
 
 $$
 \text{Generation} \neq \text{Correctness}
 $$
 
-<p>A production-level agent requires:</p>
+A production-level agent requires:
 
 $$
 \text{Agent} = \text{LLM} + \text{Planning} + \text{Memory} + \text{Tools} + \text{Evaluation}
@@ -646,10 +605,9 @@ $$
 
 <h1 id="future">The Future: AI That Ships Features<a hidden class="anchor" aria-hidden="true" href="#future">#</a></h1>
 
-<p>The evolution of software development:</p>
+The evolution of software development:
 
-```
-1990s       Human writes everything
+<pre><code>1990s       Human writes everything
               |
               v
 2010s       IDE + Autocomplete
@@ -659,45 +617,38 @@ $$
               |
               v
 Future      Autonomous Software Agent
-```
+</code></pre>
 
-<p>The next generation of developers may not spend most of their time writing code. Instead, they will:</p>
+The next generation of developers may not spend most of their time writing code. Instead, they will:
 
-<ul>
-  <li>Define goals</li>
-  <li>Design agent systems</li>
-  <li>Build evaluation frameworks</li>
-  <li>Manage autonomous engineering workflows</li>
-</ul>
+- Define goals
+- Design agent systems
+- Build evaluation frameworks
+- Manage autonomous engineering workflows
 
-<p>The ultimate vision is:</p>
+The ultimate vision is:
 
-<blockquote>
-  <p>Software engineering becomes a <strong>collaboration</strong> between humans and intelligent agents.</p>
-</blockquote>
+> Software engineering becomes a **collaboration** between humans and intelligent agents.
 
-<p>AI will not simply help developers write software. <strong>AI will become a new layer of software engineering itself.</strong></p>
+AI will not simply help developers write software. **AI will become a new layer of software engineering itself.**
 
 <h1 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h1>
 
-<p>LLMs started as language models. Then they became coding assistants. Now they are evolving into <strong>autonomous agents</strong> capable of planning, reasoning, and executing complex tasks.</p>
+LLMs started as language models. Then they became coding assistants. Now they are evolving into **autonomous agents** capable of planning, reasoning, and executing complex tasks.
 
-<p>The future competition will not only be about who has the largest model. It will be about who can build the <strong>most reliable agent ecosystem</strong>.</p>
+The future competition will not only be about who has the largest model. It will be about who can build the **most reliable agent ecosystem**.
 
-<p>The next era belongs to those who can design intelligent workflows.</p>
+The next era belongs to those who can design intelligent workflows.
 
-<blockquote>
-  <p><strong>From AI that helps you code.</strong> <strong>To AI that builds, tests, and ships software.</strong></p>
-</blockquote>
+> **From AI that helps you code.**
+> **To AI that builds, tests, and ships software.**
 
 <h1 id="references">References<a hidden class="anchor" aria-hidden="true" href="#references">#</a></h1>
 
-<ol>
-  <li>Anthropic. <em>Model Context Protocol Specification</em>. 2025.</li>
-  <li>Yao, S., et al. <em>ReAct: Synergizing Reasoning and Acting in Language Models</em>. ICLR 2023.</li>
-  <li>Sutton, R. S., &amp; Barto, A. G. <em>Reinforcement Learning: An Introduction</em>. MIT Press, 2018.</li>
-  <li>OpenAI. <em>Function Calling and Tools</em>. 2024.</li>
-  <li>Anthropic. <em>Building Effective Agents</em>. 2024.</li>
-</ol>
+1. Anthropic. *Model Context Protocol Specification*. 2025.
+2. Yao, S., et al. *ReAct: Synergizing Reasoning and Acting in Language Models*. ICLR 2023.
+3. Sutton, R. S., &amp; Barto, A. G. *Reinforcement Learning: An Introduction*. MIT Press, 2018.
+4. OpenAI. *Function Calling and Tools*. 2024.
+5. Anthropic. *Building Effective Agents*. 2024.
 
 </div>
