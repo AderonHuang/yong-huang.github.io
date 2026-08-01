@@ -474,12 +474,6 @@ a:hover { color: var(--accent-hover); }
 }
 
 /* Blog meta & abstract (Lilian Weng style) */
-.blog-meta {
-  color: var(--muted);
-  font-size: 0.9em;
-  margin: -0.5em 0 1.2em;
-  font-style: italic;
-}
 
 /* Numbered section headers (## 1. Introduction) */
 .post-content h2 {
@@ -497,119 +491,8 @@ a:hover { color: var(--accent-hover); }
 }
 
 /* Blog tag pills (top of post) */
-.blog-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  margin: 0 0 1.5em;
-}
-
-.blog-tags a {
-  display: inline-block;
-  background: var(--tag-bg);
-  color: var(--tag-fg);
-  padding: 3px 12px;
-  border-radius: 999px;
-  font-size: 0.78em;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.blog-tags a:hover {
-  background: var(--accent);
-  color: white;
-}
 
 /* Blog TOC (Lilian Weng style - collapsible) */
-.blog-toc {
-  margin: 1.5em 0 2em;
-  font-size: 0.95em;
-}
-
-.blog-toc > details {
-  background: rgba(14, 124, 116, 0.04);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-[data-theme="dark"] .blog-toc > details {
-  background: rgba(45, 212, 191, 0.04);
-}
-
-.blog-toc > details > summary {
-  padding: 0.6em 1.2em;
-  cursor: pointer;
-  font-weight: 600;
-  color: var(--text);
-  user-select: none;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 0.4em;
-}
-
-.blog-toc > details > summary::-webkit-details-marker {
-  display: none;
-}
-
-.blog-toc > details > summary::before {
-  content: "▶";
-  font-size: 0.7em;
-  color: var(--accent);
-  transition: transform 0.15s ease;
-}
-
-.blog-toc > details[open] > summary::before {
-  transform: rotate(90deg);
-}
-
-.blog-toc > details > summary:hover {
-  background: rgba(14, 124, 116, 0.08);
-}
-
-.blog-toc > details > div {
-  padding: 0.8em 1.2em 1em;
-  border-top: 1px solid var(--border);
-}
-
-.blog-toc ul {
-  margin: 0;
-  padding-left: 1.2em;
-  list-style: none;
-}
-
-.blog-toc > details > div > ul {
-  padding-left: 0;
-}
-
-.blog-toc ul li {
-  margin: 0.3em 0;
-  position: relative;
-  padding-left: 1.2em;
-}
-
-.blog-toc ul li::before {
-  content: "•";
-  color: var(--accent);
-  position: absolute;
-  left: 0;
-}
-
-.blog-toc ul li a {
-  color: var(--text);
-  text-decoration: none;
-}
-
-.blog-toc ul li a:hover {
-  color: var(--accent);
-  text-decoration: underline;
-}
-
-.blog-toc ul li ul {
-  margin-top: 0.2em;
-  font-size: 0.95em;
-}
 
 /* Post headings should have anchor links (kramdown-style) */
 .post-content h1, .post-content h2, .post-content h3,
