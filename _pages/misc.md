@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /misc/
-title: Misc
+title: Personal
 nav: true
 nav_order: 5
-description: Hobbies, favorites, and other things.
+description: Interests, Others
 ---
 
 <div class="group-title">Hobbies</div>

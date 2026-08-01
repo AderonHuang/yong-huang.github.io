@@ -2,7 +2,7 @@
 layout: page
 title: Intellectual Property & Research
 permalink: /projects/
-description: Intellectual property, research, and open-source contributions.
+description:
 nav: true
 nav_order: 3
 ---
