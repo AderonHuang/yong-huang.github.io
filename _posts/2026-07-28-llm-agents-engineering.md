@@ -12,22 +12,13 @@ _styles: |
      Scoped to this post only.
      ============================================ */
 
-  /* ---------- Layout: keep sidebar visible (matches scr.png / scr0.png) ---------- */
+  /* ---------- Layout: hide sidebar (single-column, Lilian Weng style) ---------- */
   .cv-layout {
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: 3em;
-    max-width: 2360px;
-    margin: 0 auto;
+    display: block;
+    max-width: 760px;
     padding: 1em 0;
   }
-  @media (max-width: 900px) {
-    .cv-layout {
-      grid-template-columns: 1fr;
-      gap: 1.5em;
-    }
-  }
-  .cv-sidebar { display: block !important; }
+  .cv-sidebar { display: none !important; }
   .cv-main { min-width: 0; }
 
   /* ---------- Post header (matches .post-header) ---------- */
