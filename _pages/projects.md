@@ -26,6 +26,7 @@ nav_order: 3
       <span class="entry__title">DeepResearch Agent System</span>
       <a class="chip" href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights/blob/main/DeepResearch%20Agent%20System.pdf">2025SR2413085</a>
     </div>
+    <div class="entry__pdf"><a class="chip" href="https://arxiv.org/pdf/2607.27562">PDF</a></div>
   </div>
   <div class="entry">
     <div class="entry__head">
