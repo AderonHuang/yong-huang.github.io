@@ -37,7 +37,7 @@ description:
 <div class="group-title">Others</div>
 <div class="card">
   <div class="item">
-    <span class="item__label">Other Item</span>
-    <div class="item__sub">Brief description</div>
+    <span class="item__label">Make friends</span>
+    <div class="item__sub">I'm very keen to make friends who share similar interests. My current primary research interests are world models and embodied AI.</div>
   </div>
 </div>
