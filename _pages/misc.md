@@ -49,8 +49,11 @@ description:
 
 <div class="group-title">Others</div>
 <div class="card">
-  <div class="item">
-    <span class="item__label">Make friends</span>
-    <div class="item__sub">I'm very keen to make friends who share similar interests. My current primary research interests are world models and embodied AI.</div>
+  <div class="entry">
+    <div class="entry__head">
+      <span class="entry__title">Make friends</span>
+      <a class="chip" href="{{ '/galleries/wechat/' | relative_url }}">WeChat</a>
+    </div>
+    <div class="entry__meta">I'm very keen to make friends who share similar interests. My current primary research interests are world models and embodied AI.</div>
   </div>
 </div>
