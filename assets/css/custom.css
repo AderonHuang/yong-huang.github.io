@@ -865,12 +865,10 @@ hr {
 }
 
 /* ============================================
-   Navbar brand (Yong Huang) - make non-clickable
+   Navbar brand (Yong Huang) - keep visual style
+   The link destination is changed to /blog/ via JS
+   (see assets/js/navbar-brand.js)
    ============================================ */
-a.navbar-brand {
-  pointer-events: none;
-  cursor: default;
-}
 
 .cv-email {
   margin: 0 0 1em;
