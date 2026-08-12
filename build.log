@@ -4,7 +4,6 @@ Configuration file: /home/runner/work/yong-huang.github.io/yong-huang.github.io/
  Incremental build: disabled. Enable with --incremental
       Generating... 
 DEPRECATION WARNING: to_time will always preserve the timezone offset of the receiver in Rails 8.0. To opt in to the new behavior, set `ActiveSupport.to_time_preserves_timezone = true`. (called from load at /home/runner/work/yong-huang.github.io/yong-huang.github.io/vendor/bundle/ruby/3.3.0/bin/jekyll:25)
-Terser: Minifying /home/runner/work/yong-huang.github.io/yong-huang.github.io/assets/js/navbar-brand.js
 Terser: Minifying /home/runner/work/yong-huang.github.io/yong-huang.github.io/assets/js/theme.js
 Terser: Minifying /home/runner/work/yong-huang.github.io/yong-huang.github.io/test/style_contract.js
 Terser: Minifying /home/runner/work/yong-huang.github.io/yong-huang.github.io/test/visual/distill.spec.js
@@ -177,7 +176,7 @@ Terser: Minifying /home/runner/work/yong-huang.github.io/yong-huang.github.io/te
 [33m     Build Warning: Layout 'false' requested in _pages/about.md does not exist.[0m
 [33m     Build Warning: Layout 'false' requested in _pages/certificates.html does not exist.[0m
 [33m     Build Warning: Layout 'false' requested in _pages/certificates.md does not exist.[0m
-[NbConvertApp] Converting notebook /tmp/jekyll-jupyter-notebook20260812-3591-k14xgc.ipynb to html
+[NbConvertApp] Converting notebook /tmp/jekyll-jupyter-notebook20260812-3428-64x63r.ipynb to html
 /opt/hostedtoolcache/Python/3.13.14/x64/lib/python3.13/site-packages/nbconvert/filters/highlight.py:71: UserWarning: IPython3 lexer unavailable, falling back on Python 3
   return _pygments_highlight(
 [33m          Conflict: The following destination is shared by multiple files.[0m
