@@ -94,6 +94,12 @@ description:
 <div class="card">
   <div class="entry">
     <div class="entry__head">
+      <span class="entry__title">Privileged to present exclusive insights from real-world external deployments of DeepSeek's official Harness</span>
+      <span class="entry__date">2026.7</span>
+    </div>
+  </div>
+  <div class="entry">
+    <div class="entry__head">
       <span class="entry__title">Presented an overview of Xiaomi Foundation Models at Meituan Technology</span>
       <span class="entry__date">2025.10</span>
     </div>
