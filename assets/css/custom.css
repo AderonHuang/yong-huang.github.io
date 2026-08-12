@@ -864,12 +864,6 @@ hr {
   margin: 0 0 0.6em;
 }
 
-/* ============================================
-   Navbar brand (Yong Huang) - keep visual style
-   The link destination is changed to /blog/ via JS
-   (see assets/js/navbar-brand.js)
-   ============================================ */
-
 .cv-email {
   margin: 0 0 1em;
   font-size: 0.88em;
