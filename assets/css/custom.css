@@ -864,6 +864,14 @@ hr {
   margin: 0 0 0.6em;
 }
 
+/* ============================================
+   Navbar brand (Yong Huang) - make non-clickable
+   ============================================ */
+a.navbar-brand {
+  pointer-events: none;
+  cursor: default;
+}
+
 .cv-email {
   margin: 0 0 1em;
   font-size: 0.88em;
