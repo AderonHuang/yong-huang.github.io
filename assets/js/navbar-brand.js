@@ -1,0 +1,1 @@
+!function(){var t=document.querySelector("a.navbar-brand");if(t){var e=t.getAttribute("href")||"";("/"===e||e.endsWith("/")||""===e)&&t.setAttribute("href","/yong-huang.github.io/blog/")}}();
