@@ -94,7 +94,7 @@ description:
 <div class="card">
   <div class="entry">
     <div class="entry__head">
-      <span class="entry__title">Privileged to present exclusive insights from real-world external deployments of DeepSeek's official Harness</span>
+      <span class="entry__title">Honored to be invited to share exclusive, firsthand insights from external engagements with DeepSeek's official Harness</span>
       <span class="entry__date">2026.7</span>
     </div>
   </div>
