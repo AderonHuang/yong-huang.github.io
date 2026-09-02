@@ -933,11 +933,20 @@ hr {
 /* ============================================
    CV Layout - 侧边栏 + 主内容
    ============================================ */
+
+/* Override the al-folio .container max-width when it wraps the
+   homepage's cv-layout (otherwise it'd be capped at 930px). */
+.container.mt-5:has(.cv-layout) {
+  max-width: 1925px;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
 .cv-layout {
   display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 2em;
-  max-width: 1100px;
+  grid-template-columns: 350px 1fr;
+  gap: 2.5em;
+  max-width: 1925px;
   margin: 0 auto;
   padding: 1em 0;
 }
