@@ -3,13 +3,15 @@ layout: page
 permalink: /
 title: Homepage
 description: Yong Huang — LLM/VLM AI Agent Engineering Lead at Meituan
-intro: |
-  I'm Yong Huang (黄勇), lead for LLM/VLM AI Agent Engineering at Meituan Technology. Now I am working on post-training of Large Language Model (LLM) and Vision Language Model (VLM), also AI Agent (Multi-Agent and Harness).
-
-  I have accumulated over 30 publications and Intellectual Property (IP) items, with a primary focus on large language model (LLM) pre-training, fine-tuning, and reinforcement learning-based post-training. The foundation models we developed have been widely deployed, including autonomous valet parking in Xiaomi EVs, the intelligent voice assistant Xiao Ai, and AIoT ecosystems, collectively serving over 100 million Xiaomi users.
-
-  If you are seeking any form of technical seminars or professional collaborations, please feel free to email yonghuang.hust@gmail.com
 ---
+
+<div class="home-intro">
+  <p>I'm Yong Huang (黄勇), lead for LLM/VLM AI Agent Engineering at Meituan Technology. Now I am working on post-training of Large Language Model (LLM) and Vision Language Model (VLM), also AI Agent (Multi-Agent and Harness).</p>
+
+  <p>I have accumulated over 30 publications and Intellectual Property (IP) items, with a primary focus on large language model (LLM) pre-training, fine-tuning, and reinforcement learning-based post-training. The foundation models we developed have been widely deployed, including autonomous valet parking in Xiaomi EVs, the intelligent voice assistant Xiao Ai, and AIoT ecosystems, collectively serving over 100 million Xiaomi users.</p>
+
+  <p>If you are seeking any form of technical seminars or professional collaborations, please feel free to email <a href="mailto:yonghuang.hust@gmail.com">yonghuang.hust@gmail.com</a>.</p>
+</div>
 
 <div class="group-title">Work Experience</div>
 <div class="card">
