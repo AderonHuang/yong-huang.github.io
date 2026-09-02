@@ -77,8 +77,8 @@ title: Homepage
 <h2 id="research">📝 Research</h2>
 
 <ul class="cv-list">
-  <li>Y Huang, <a href="https://benchen4395.github.io/">B Chen</a>, D Qu. <a href="https://arxiv.org/pdf/2101.07116"><em>LNSMM: Eye gaze estimation with local network share multiview multitask</em></a>, <strong>arXiv:2101.07116</strong>.</li>
-  <li>Y Huang, A Huang, W Zhu, Y Fang, <a href="https://www.researchgate.net/scientific-contributions/Jinghua-Feng-2169941182">J Feng</a>. <a href="https://arxiv.org/pdf/2207.11637"><em>Explored An Effective Methodology for Fine-Grained Snake Recognition</em></a>, <strong>CVPR2022 – FGVC Workshop</strong>.</li>
+  <li>Y Huang, <a href="https://benchen4395.github.io/">B Chen</a>, D Qu. <a href="https://arxiv.org/pdf/2101.07116"><em>LNSMM: Eye gaze estimation with local network share multiview multitask</em></a>, arXiv:2101.07116.</li>
+  <li>Y Huang, A Huang, W Zhu, Y Fang, <a href="https://www.researchgate.net/scientific-contributions/Jinghua-Feng-2169941182">J Feng</a>. <a href="https://arxiv.org/pdf/2207.11637"><em>Explored An Effective Methodology for Fine-Grained Snake Recognition</em></a>, CVPR2022 – FGVC Workshop.</li>
 </ul>
 
 <h2 id="blog">📰 Blog</h2>
