@@ -80,6 +80,17 @@
   color: var(--accent);
 }
 
+/* Paper titles in the Research section — keep the link, but render
+   in normal black text (not teal accent) so the line reads as one
+   continuous paragraph. */
+.cv-list li a.paper-title {
+  color: var(--text);
+}
+
+.cv-list li a.paper-title:hover {
+  color: var(--accent);
+}
+
 .cv-list li strong {
   color: var(--text);
   font-weight: 600;
