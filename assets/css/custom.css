@@ -76,6 +76,10 @@
   margin-right: 0.3em;
 }
 
+.cv-list li em a {
+  color: var(--accent);
+}
+
 .cv-list li strong {
   color: var(--text);
   font-weight: 600;
