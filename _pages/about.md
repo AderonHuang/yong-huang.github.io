@@ -26,7 +26,7 @@ title: Homepage
 <ul class="cv-list cv-list--compact">
   <li>AI Fusion Inspection Super-Brain System Based on Multimodal Large Models (<a href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights/blob/main/AI%20Fusion%20Inspection%20Super-Brain%20System%20Based%20on%20Multimodal%20Large%20Models.pdf">2025SR2269361</a>)</li>
   <li>Automotive Intelligent Cockpit Multimodal System Based on AI Large Models (<a href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights/blob/main/Automotive%20Intelligent%20Cockpit%20Multimodal%20System%20Based%20on%20AI%20Large%20Models.pdf">2025SR2436201</a>)</li>
-  <li>DeepResearch Agent System (<a href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights/blob/main/DeepResearch%20Agent%20System.pdf">2025SR2413085</a>, <a href="https://arxiv.org/pdf/2607.27562">arXiv</a>)</li>
+  <li>DeepResearch Agent System (<a href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights/blob/main/DeepResearch%20Agent%20System.pdf">2025SR2413085</a>, <a href="https://arxiv.org/pdf/2607.27562">PDF</a>)</li>
   <li>Embodied Intelligence Large Model System (<a href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights/blob/main/Embodied%20Intelligence%20Large%20Model%20System.pdf">2025SR2262582</a>)</li>
   <li>GUI Agent System Based on Multimodal Large Models (<a href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights/blob/main/GUI%20Agent%20System%20Based%20on%20Multimodal%20Large%20Models.pdf">2025SR2410561</a>)</li>
   <li>General Agent System Based on Multimodal Large Models (<a href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights/blob/main/General%20Agent%20System%20Based%20on%20Multimodal%20Large%20Models.pdf">2025SR2269402</a>)</li>
@@ -51,7 +51,7 @@ title: Homepage
 <h2 id="education">🎓 Education</h2>
 
 <ul class="cv-list">
-  <li><em>2018 – 2020</em>, M.S. in Electronic Engineering, <strong><a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a></strong>. Advisor: Prof. Xiang Bai, Prof. Daiming Qu, Prof. Tao Jiang.</li>
+  <li><em>2018 – 2020</em>, M.S. in Electronic Engineering, Huazhong University of Science and Technology. Advisor: Prof. Xiang Bai, Prof. Daiming Qu, Prof. Tao Jiang.</li>
   <li><em>2014 – 2018</em>, B.S. in Electronic Science and Technology, HUST (admitted through Direct Recommendation). Advisor: Prof. Daiming Qu.</li>
 </ul>
 
@@ -67,7 +67,7 @@ title: Homepage
 <h2 id="invited-talks">🎤 Invited Talks</h2>
 
 <ul class="cv-list">
-  <li><em>2026.7</em>, Honored to be invited to share exclusive, firsthand insights from external engagements with <strong>DeepSeek</strong>'s official Harness.</li>
+  <li><em>2026.07</em>, Honored to be invited to share exclusive, firsthand insights from external engagements with <strong>DeepSeek</strong>'s official Harness.</li>
   <li><em>2025.10</em>, Presented an overview of Xiaomi Foundation Models at <strong>Meituan Technology</strong>.</li>
   <li><em>2024.02</em>, Delivered a talk on Self-Supervised Learning (SSL) at <strong>Xiaomi Technology Committee</strong>.</li>
   <li><em>2022.06</em>, The <strong>AntGroup</strong> Technical Sharing Conference.</li>
@@ -77,8 +77,8 @@ title: Homepage
 <h2 id="research">📝 Research</h2>
 
 <ul class="cv-list">
-  <li>Y Huang, <a href="https://benchen4395.github.io/"><strong>B Chen</strong></a>, D Qu. <a href="https://arxiv.org/pdf/2101.07116"><em>LNSMM: Eye gaze estimation with local network share multiview multitask</em></a>, <strong>arXiv:2101.07116</strong>.</li>
-  <li>Y Huang, A Huang,, W Zhu, Y Fang, <a href="https://www.researchgate.net/scientific-contributions/Jinghua-Feng-2169941182"><strong>J Feng</strong></a>. <a href="https://arxiv.org/pdf/2207.11637"><em>Explored An Effective Methodology for Fine-Grained Snake Recognition</em></a>, <strong>CVPR2022 – FGVC Workshop</strong>.</li>
+  <li>Y Huang, <a href="https://benchen4395.github.io/">B Chen</a>, D Qu. <a href="https://arxiv.org/pdf/2101.07116"><em>LNSMM: Eye gaze estimation with local network share multiview multitask</em></a>, <strong>arXiv:2101.07116</strong>.</li>
+  <li>Y Huang, A Huang, W Zhu, Y Fang, <a href="https://www.researchgate.net/scientific-contributions/Jinghua-Feng-2169941182">J Feng</a>. <a href="https://arxiv.org/pdf/2207.11637"><em>Explored An Effective Methodology for Fine-Grained Snake Recognition</em></a>, <strong>CVPR2022 – FGVC Workshop</strong>.</li>
 </ul>
 
 <h2 id="blog">📰 Blog</h2>
