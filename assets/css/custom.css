@@ -7,22 +7,14 @@
    Homepage intro banner (top of main column on /)
    ============================================ */
 .home-intro {
-  background: rgba(14, 124, 116, 0.05);
-  border-left: 3px solid var(--accent);
-  border-radius: 0 8px 8px 0;
-  padding: 1.1em 1.3em;
   margin: 0 0 1.6em;
-  font-size: 1.02em;
-  line-height: 1.75;
+  font-size: 0.95em;
+  line-height: 1.65;
   color: var(--text);
 }
 
-[data-theme="dark"] .home-intro {
-  background: rgba(45, 212, 191, 0.05);
-}
-
 .home-intro p {
-  margin: 0 0 0.8em;
+  margin: 0 0 0.7em;
 }
 
 .home-intro p:last-child {
@@ -58,17 +50,16 @@
 }
 
 /* ============================================
-   Homepage list items (Academic Pages style)
+   Homepage list items (Academic Pages style — default disc bullet)
    ============================================ */
 .cv-list {
-  list-style: none;
-  padding-left: 0;
+  list-style: disc;
+  padding-left: 1.4em;
   margin: 0.3em 0 1em;
 }
 
 .cv-list li {
-  position: relative;
-  padding: 0.25em 0 0.25em 1.3em;
+  padding: 0.2em 0;
   margin: 0;
   line-height: 1.55;
   font-size: 0.95em;
@@ -76,13 +67,7 @@
 }
 
 .cv-list li::before {
-  content: "›";
-  position: absolute;
-  left: 0.1em;
-  top: 0.22em;
-  color: var(--accent);
-  font-weight: 700;
-  font-size: 1em;
+  display: none;
 }
 
 .cv-list li em {
@@ -108,7 +93,7 @@
 
 /* Compact list (used for many short entries like IP list) */
 .cv-list--compact li {
-  padding: 0.15em 0 0.15em 1.3em;
+  padding: 0.1em 0;
   font-size: 0.92em;
 }
 
@@ -133,7 +118,7 @@
 
 /* Tighter home-intro block to match compact layout */
 .home-intro {
-  padding: 0.9em 1.2em;
+  padding: 0;
   margin: 0 0 1.4em;
   font-size: 0.95em;
   line-height: 1.6;
@@ -950,9 +935,9 @@ hr {
    ============================================ */
 .cv-layout {
   display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 3em;
-  max-width: 2360px;
+  grid-template-columns: 200px 1fr;
+  gap: 2em;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 1em 0;
 }

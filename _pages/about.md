@@ -2,7 +2,6 @@
 layout: page
 permalink: /
 title: Homepage
-description: Yong Huang — LLM/VLM AI Agent Engineering Lead at Meituan
 ---
 
 <div class="home-intro">
