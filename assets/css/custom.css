@@ -757,16 +757,16 @@ hr {
 /* Force the .container that wraps the homepage. Tailwind v4's
    responsive .container expands at wide viewports; lock it. */
 .container.mt-5:has(.cv-layout) {
-  max-width: 1050px !important;
+  max-width: 1100px !important;
   padding-left: 1em;
   padding-right: 1em;
 }
 
 .cv-layout {
   display: grid;
-  grid-template-columns: 210px 1fr;
-  gap: 2.5em;
-  max-width: 1050px;
+  grid-template-columns: 240px 1fr;
+  gap: 3em;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 1em 0;
 }
@@ -782,6 +782,8 @@ hr {
   position: sticky;
   top: 1.5em;
   align-self: start;
+  min-width: 0;       /* prevent grid blowout from long unbreakable text */
+  overflow-wrap: anywhere;
 }
 
 .cv-avatar {
@@ -825,6 +827,8 @@ hr {
 .cv-email {
   margin: 0 0 1em;
   font-size: 0.88em;
+  overflow-wrap: anywhere;
+  word-break: break-all;
 }
 
 .cv-email a {
