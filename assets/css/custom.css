@@ -754,13 +754,22 @@ hr {
    (sidebar ~15%, main ~83%, small gap between)
    ============================================ */
 
+/* Force the .container that wraps the homepage to the same width as
+   benchen4395's wrapper. Tailwind v4's responsive .container utility
+   expands at large breakpoints, so we override it here. */
+.container.mt-5:has(.cv-layout) {
+  max-width: 925px !important;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .cv-layout {
   display: grid;
   grid-template-columns: 145px 1fr;
   gap: 1.4em;
   max-width: 925px;
   margin: 0 auto;
-  padding: 1em 1em;
+  padding: 1em 0;
 }
 
 @media (max-width: 900px) {
