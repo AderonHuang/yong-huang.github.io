@@ -2,24 +2,18 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
+      {%- comment -%} Brand label is driven by the title of the page with permalink: '/' {%- endcomment -%}
+      {%- assign brand_label = site.title -%}
+      {%- if site.title == 'blank' -%}
+        {%- assign brand_label = '' -%}
+        {%- for p in site.pages -%}
+          {%- if p.permalink == '/' and p.title -%}
+            {%- assign brand_label = p.title -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
       <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-        {% if site.title == 'blank' %}
-          {% if site.first_name %}
-            <span class="font-weight-bold">
-              {{- site.first_name -}}
-            </span>
-          {% endif %}
-          {% if site.middle_name %}
-            {{- site.middle_name -}}
-          {% endif %}
-          {% if site.last_name %}
-            <span class="font-weight-bold">
-              {{- site.last_name -}}
-            </span>
-          {% endif %}
-        {% else %}
-          {{- site.title -}}
-        {% endif %}
+        {{- brand_label -}}
       </a>
       {% if false and site.enable_navbar_social %}
         <!-- Social Icons -->
