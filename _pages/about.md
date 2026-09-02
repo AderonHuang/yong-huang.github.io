@@ -21,32 +21,6 @@ title: Homepage
   <li><em>2019 – 2021</em>, Researcher, 2012Labs, <strong><a href="https://www.huawei.com">Huawei</a></strong>, Shanghai.</li>
 </ul>
 
-<h2 id="education">🎓 Education</h2>
-
-<ul class="cv-list">
-  <li><em>2018 – 2020</em>, M.S. in Electronic Engineering, <strong><a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a></strong>. Advisor: Prof. Xiang Bai, Prof. Daiming Qu, Prof. Tao Jiang.</li>
-  <li><em>2014 – 2018</em>, B.S. in Electronic Science and Technology, HUST (admitted through Direct Recommendation). Advisor: Prof. Daiming Qu.</li>
-</ul>
-
-<h2 id="honors-and-awards">🏆 Honors and Awards</h2>
-
-<ul class="cv-list">
-  <li><em>2022</em>, Won 1st Place out of 1,000+ finalist teams globally in the 2022 CVPR-Kaggle Fine-Grained Categorization Challenge. Paper: <a href="https://arxiv.org/pdf/2207.11637"><em>"Explored An Effective Methodology for Fine-Grained Snake Recognition"</em></a>. <a href="https://www.kaggle.com/competitions/snakeclef2022/leaderboard">kaggle.com/competitions/snakeclef2022</a></li>
-  <li><em>2017</em>, 1st Prize in the Asian Mathematical Contest in Modeling (APMCM).</li>
-  <li><em>2017</em>, 2nd Prize in the Mathematical Contest in Modeling (MCM/ICM).</li>
-  <li><em>2016</em>, 1st Prize in the Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM).</li>
-</ul>
-
-<h2 id="invited-talks">🎤 Invited Talks</h2>
-
-<ul class="cv-list">
-  <li><em>2026.7</em>, Honored to be invited to share exclusive, firsthand insights from external engagements with <strong>DeepSeek</strong>'s official Harness.</li>
-  <li><em>2025.10</em>, Presented an overview of Xiaomi Foundation Models at <strong>Meituan Technology</strong>.</li>
-  <li><em>2024.02</em>, Delivered a talk on Self-Supervised Learning (SSL) at <strong>Xiaomi Technology Committee</strong>.</li>
-  <li><em>2022.06</em>, The <strong>AntGroup</strong> Technical Sharing Conference.</li>
-  <li><em>2021.03</em>, The <strong>Huawei 2012Labs</strong> Technical Sharing Seminar.</li>
-</ul>
-
 <h2 id="intellectual-property">💼 Intellectual Property</h2>
 
 <ul class="cv-list cv-list--compact">
@@ -74,17 +48,37 @@ title: Homepage
   <li>Trading Agent System Based on Multimodal Large Models (<a href="https://github.com/AderonHuang/LLM-VLM-Software-Copyrights/blob/main/Trading%20Agent%20System%20Based%20on%20Multimodal%20Large%20Models.pdf">2025SR2269083</a>)</li>
 </ul>
 
+<h2 id="education">🎓 Education</h2>
+
+<ul class="cv-list">
+  <li><em>2018 – 2020</em>, M.S. in Electronic Engineering, <strong><a href="http://english.hust.edu.cn/">Huazhong University of Science and Technology</a></strong>. Advisor: Prof. Xiang Bai, Prof. Daiming Qu, Prof. Tao Jiang.</li>
+  <li><em>2014 – 2018</em>, B.S. in Electronic Science and Technology, HUST (admitted through Direct Recommendation). Advisor: Prof. Daiming Qu.</li>
+</ul>
+
+<h2 id="honors-and-awards">🏆 Honors and Awards</h2>
+
+<ul class="cv-list">
+  <li><em>2022</em>, Won 1st Place out of 1,000+ finalist teams globally in the 2022 CVPR-Kaggle Fine-Grained Categorization Challenge. Paper: <a href="https://arxiv.org/pdf/2207.11637"><em>"Explored An Effective Methodology for Fine-Grained Snake Recognition"</em></a>. <a href="https://www.kaggle.com/competitions/snakeclef2022/leaderboard">kaggle.com/competitions/snakeclef2022</a></li>
+  <li><em>2017</em>, 1st Prize in the Asian Mathematical Contest in Modeling (APMCM).</li>
+  <li><em>2017</em>, 2nd Prize in the Mathematical Contest in Modeling (MCM/ICM).</li>
+  <li><em>2016</em>, 1st Prize in the Contemporary Undergraduate Mathematical Contest in Modeling (CUMCM).</li>
+</ul>
+
+<h2 id="invited-talks">🎤 Invited Talks</h2>
+
+<ul class="cv-list">
+  <li><em>2026.7</em>, Honored to be invited to share exclusive, firsthand insights from external engagements with <strong>DeepSeek</strong>'s official Harness.</li>
+  <li><em>2025.10</em>, Presented an overview of Xiaomi Foundation Models at <strong>Meituan Technology</strong>.</li>
+  <li><em>2024.02</em>, Delivered a talk on Self-Supervised Learning (SSL) at <strong>Xiaomi Technology Committee</strong>.</li>
+  <li><em>2022.06</em>, The <strong>AntGroup</strong> Technical Sharing Conference.</li>
+  <li><em>2021.03</em>, The <strong>Huawei 2012Labs</strong> Technical Sharing Seminar.</li>
+</ul>
+
 <h2 id="research">📝 Research</h2>
 
 <ul class="cv-list">
   <li>Y Huang, <a href="https://benchen4395.github.io/"><strong>B Chen</strong></a>, D Qu. <a href="https://arxiv.org/pdf/2101.07116"><em>LNSMM: Eye gaze estimation with local network share multiview multitask</em></a>, <strong>arXiv:2101.07116</strong>.</li>
-  <li>Y Huang, A Huang, W Zhu, Y Fang, <a href="https://www.researchgate.net/scientific-contributions/Jinghua-Feng-2169941182"><strong>J Feng</strong></a>. <a href="https://arxiv.org/pdf/2207.11637"><em>Explored An Effective Methodology for Fine-Grained Snake Recognition</em></a>, <strong>CVPR2022 – FGVC Workshop</strong>.</li>
-</ul>
-
-<h2 id="open-source">🔧 Open Source</h2>
-
-<ul class="cv-list">
-  <li><a href="https://github.com/AderonHuang/OmniAgent"><strong>OmniAgent</strong></a> — Open-source AI agent project (<a href="https://github.com/AderonHuang/OmniAgent">GitHub</a>).</li>
+  <li>Y Huang, A Huang,, W Zhu, Y Fang, <a href="https://www.researchgate.net/scientific-contributions/Jinghua-Feng-2169941182"><strong>J Feng</strong></a>. <a href="https://arxiv.org/pdf/2207.11637"><em>Explored An Effective Methodology for Fine-Grained Snake Recognition</em></a>, <strong>CVPR2022 – FGVC Workshop</strong>.</li>
 </ul>
 
 <h2 id="blog">📰 Blog</h2>
@@ -93,4 +87,10 @@ title: Homepage
   {% for post in site.posts %}
     <li><em>{{ post.date | date: '%Y.%m' }}</em>, <a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong></a>{% if post.description %} — {{ post.description }}{% endif %}</li>
   {% endfor %}
+</ul>
+
+<h2 id="open-source">🔧 Open Source</h2>
+
+<ul class="cv-list">
+  <li><a href="https://github.com/AderonHuang/OmniAgent"><strong>OmniAgent</strong></a> — Open-source AI agent project (<a href="https://github.com/AderonHuang/OmniAgent">GitHub</a>).</li>
 </ul>
