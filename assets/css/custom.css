@@ -932,23 +932,17 @@ hr {
 
 /* ============================================
    CV Layout - 侧边栏 + 主内容
+   Width matches benchen4395.github.io: 925px total wrapper
+   (sidebar ~15%, main ~83%, small gap between)
    ============================================ */
-
-/* Override the al-folio .container max-width when it wraps the
-   homepage's cv-layout (otherwise it'd be capped at 930px). */
-.container.mt-5:has(.cv-layout) {
-  max-width: 1925px;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-}
 
 .cv-layout {
   display: grid;
-  grid-template-columns: 350px 1fr;
-  gap: 2.5em;
-  max-width: 1925px;
+  grid-template-columns: 145px 1fr;
+  gap: 1.4em;
+  max-width: 925px;
   margin: 0 auto;
-  padding: 1em 0;
+  padding: 1em 1em;
 }
 
 @media (max-width: 900px) {
@@ -965,12 +959,12 @@ hr {
 }
 
 .cv-avatar {
-  width: 130px;
-  height: 130px;
+  width: 105px;
+  height: 105px;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid var(--border);
-  margin: 0 0 1em;
+  margin: 0 0 0.8em;
   background: var(--surface);
 }
 
